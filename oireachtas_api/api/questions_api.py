@@ -101,11 +101,11 @@ class QuestionsApi(object):
             params[key] = val
         del params['kwargs']
 
-        if ('qtype' in params and
-                len(params['qtype']) > 2):
+        if self.api_client.client_side_validation and ('qtype' in params and
+                                            len(params['qtype']) > 2):
             raise ValueError("Invalid value for parameter `qtype` when calling `questions`, number of items must be less than or equal to `2`")  # noqa: E501
-        if ('qtype' in params and
-                len(params['qtype']) < 0):
+        if self.api_client.client_side_validation and ('qtype' in params and
+                                            len(params['qtype']) < 0):
             raise ValueError("Invalid value for parameter `qtype` when calling `questions`, number of items must be greater than or equal to `0`")  # noqa: E501
         collection_formats = {}
 

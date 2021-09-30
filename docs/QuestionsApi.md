@@ -28,7 +28,7 @@ date_start = '1900-01-01' # date | This is a base filter which is used on many A
 date_end = '2099-01-01' # date | This is a base filter which is used on many APIs, allowing filtering by End Date related to the Section. (optional) (default to 2099-01-01)
 skip = 0 # int | This is a base filter which is used on many APIs, allowing skipping of records by a specific integer. (optional) (default to 0)
 limit = 50 # int | This is a base filter which is used on many APIs, allowing the limiting of records to a specific integer. (optional) (default to 50)
-qtype = ['[oral, written]'] # list[str] | Filter questions by oral or writtens. (optional) (default to [oral, written])
+qtype = ['[\"oral\",\"written\"]'] # list[str] | Filter questions by oral or writtens. (optional) (default to ["oral","written"])
 member_id = 'member_id_example' # str | Filter by Member uri. (optional)
 question_id = 'question_id_example' # str | Identifier for a Single Question (optional)
 question_no = 56 # int | Filter by question No. (optional)
@@ -49,7 +49,7 @@ Name | Type | Description  | Notes
  **date_end** | **date**| This is a base filter which is used on many APIs, allowing filtering by End Date related to the Section. | [optional] [default to 2099-01-01]
  **skip** | **int**| This is a base filter which is used on many APIs, allowing skipping of records by a specific integer. | [optional] [default to 0]
  **limit** | **int**| This is a base filter which is used on many APIs, allowing the limiting of records to a specific integer. | [optional] [default to 50]
- **qtype** | [**list[str]**](str.md)| Filter questions by oral or writtens. | [optional] [default to [oral, written]]
+ **qtype** | [**list[str]**](str.md)| Filter questions by oral or writtens. | [optional] [default to [&quot;oral&quot;,&quot;written&quot;]]
  **member_id** | **str**| Filter by Member uri. | [optional] 
  **question_id** | **str**| Identifier for a Single Question | [optional] 
  **question_no** | **int**| Filter by question No. | [optional] 

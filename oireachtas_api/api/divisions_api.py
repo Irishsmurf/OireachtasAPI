@@ -107,11 +107,11 @@ class DivisionsApi(object):
             params[key] = val
         del params['kwargs']
 
-        if ('outcome' in params and
-                len(params['outcome']) > 2):
+        if self.api_client.client_side_validation and ('outcome' in params and
+                                            len(params['outcome']) > 2):
             raise ValueError("Invalid value for parameter `outcome` when calling `divisions`, number of items must be less than or equal to `2`")  # noqa: E501
-        if ('outcome' in params and
-                len(params['outcome']) < 0):
+        if self.api_client.client_side_validation and ('outcome' in params and
+                                            len(params['outcome']) < 0):
             raise ValueError("Invalid value for parameter `outcome` when calling `divisions`, number of items must be greater than or equal to `0`")  # noqa: E501
         collection_formats = {}
 

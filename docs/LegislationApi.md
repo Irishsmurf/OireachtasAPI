@@ -24,8 +24,8 @@ from pprint import pprint
 
 # create an instance of the API class
 api_instance = oireachtas_api.LegislationApi()
-bill_status = ['[Current, Withdrawn, Enacted, Rejected, Defeated, Lapsed]'] # list[str] | An array which is used to filter legislation by status detailed in default settings below.  Separated by comma. (optional) (default to [Current, Withdrawn, Enacted, Rejected, Defeated, Lapsed])
-bill_source = ['[Government, Private Member]'] # list[str] | An array used to filter legislation by origin source. (optional) (default to [Government, Private Member])
+bill_status = ['[\"Current\",\"Withdrawn\",\"Enacted\",\"Rejected\",\"Defeated\",\"Lapsed\"]'] # list[str] | An array which is used to filter legislation by status detailed in default settings below.  Separated by comma. (optional) (default to ["Current","Withdrawn","Enacted","Rejected","Defeated","Lapsed"])
+bill_source = ['[\"Government\",\"Private Member\"]'] # list[str] | An array used to filter legislation by origin source. (optional) (default to ["Government","Private Member"])
 date_start = '1900-01-01' # date | This is a base filter which is used on many APIs, allowing filtering by Start Date related to the Section. (optional) (default to 1900-01-01)
 date_end = '2099-01-01' # date | This is a base filter which is used on many APIs, allowing filtering by End Date related to the Section. (optional) (default to 2099-01-01)
 skip = 0 # int | This is a base filter which is used on many APIs, allowing skipping of records by a specific integer. (optional) (default to 0)
@@ -51,8 +51,8 @@ except ApiException as e:
 
 Name | Type | Description  | Notes
 ------------- | ------------- | ------------- | -------------
- **bill_status** | [**list[str]**](str.md)| An array which is used to filter legislation by status detailed in default settings below.  Separated by comma. | [optional] [default to [Current, Withdrawn, Enacted, Rejected, Defeated, Lapsed]]
- **bill_source** | [**list[str]**](str.md)| An array used to filter legislation by origin source. | [optional] [default to [Government, Private Member]]
+ **bill_status** | [**list[str]**](str.md)| An array which is used to filter legislation by status detailed in default settings below.  Separated by comma. | [optional] [default to [&quot;Current&quot;,&quot;Withdrawn&quot;,&quot;Enacted&quot;,&quot;Rejected&quot;,&quot;Defeated&quot;,&quot;Lapsed&quot;]]
+ **bill_source** | [**list[str]**](str.md)| An array used to filter legislation by origin source. | [optional] [default to [&quot;Government&quot;,&quot;Private Member&quot;]]
  **date_start** | **date**| This is a base filter which is used on many APIs, allowing filtering by Start Date related to the Section. | [optional] [default to 1900-01-01]
  **date_end** | **date**| This is a base filter which is used on many APIs, allowing filtering by End Date related to the Section. | [optional] [default to 2099-01-01]
  **skip** | **int**| This is a base filter which is used on many APIs, allowing skipping of records by a specific integer. | [optional] [default to 0]

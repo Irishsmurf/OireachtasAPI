@@ -113,17 +113,17 @@ class LegislationApi(object):
             params[key] = val
         del params['kwargs']
 
-        if ('bill_status' in params and
-                len(params['bill_status']) > 6):
+        if self.api_client.client_side_validation and ('bill_status' in params and
+                                            len(params['bill_status']) > 6):
             raise ValueError("Invalid value for parameter `bill_status` when calling `legislation`, number of items must be less than or equal to `6`")  # noqa: E501
-        if ('bill_status' in params and
-                len(params['bill_status']) < 0):
+        if self.api_client.client_side_validation and ('bill_status' in params and
+                                            len(params['bill_status']) < 0):
             raise ValueError("Invalid value for parameter `bill_status` when calling `legislation`, number of items must be greater than or equal to `0`")  # noqa: E501
-        if ('bill_source' in params and
-                len(params['bill_source']) > 2):
+        if self.api_client.client_side_validation and ('bill_source' in params and
+                                            len(params['bill_source']) > 2):
             raise ValueError("Invalid value for parameter `bill_source` when calling `legislation`, number of items must be less than or equal to `2`")  # noqa: E501
-        if ('bill_source' in params and
-                len(params['bill_source']) < 0):
+        if self.api_client.client_side_validation and ('bill_source' in params and
+                                            len(params['bill_source']) < 0):
             raise ValueError("Invalid value for parameter `bill_source` when calling `legislation`, number of items must be greater than or equal to `0`")  # noqa: E501
         collection_formats = {}
 
@@ -135,7 +135,7 @@ class LegislationApi(object):
             collection_formats['bill_status'] = 'csv'  # noqa: E501
         if 'bill_source' in params:
             query_params.append(('bill_source', params['bill_source']))  # noqa: E501
-            collection_formats['bill_source'] = 'multi'  # noqa: E501
+            collection_formats['bill_source'] = 'csv'  # noqa: E501
         if 'date_start' in params:
             query_params.append(('date_start', params['date_start']))  # noqa: E501
         if 'date_end' in params:

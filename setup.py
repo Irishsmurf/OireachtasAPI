@@ -14,7 +14,7 @@
 from setuptools import setup, find_packages  # noqa: H301
 
 NAME = "oireachtas-api"
-VERSION = "1.0.0"
+VERSION = "1.5.5"
 # To install the library, run the following
 #
 # python setup.py install
@@ -35,7 +35,7 @@ setup(
     version=VERSION,
     description="Houses of the Oireachtas Open Data APIs",
     author_email="open.data@oireachtas.ie",
-    url="",
+    url="https://github.com/Irishsmurf/OireachtasAPI",
     keywords=["Swagger", "Houses of the Oireachtas Open Data APIs"],
     install_requires=REQUIRES,
     packages=find_packages(),
