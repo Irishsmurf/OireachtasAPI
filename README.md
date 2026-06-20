@@ -21,9 +21,16 @@ This client SDK makes metadata queries easy, allowing you to discover and locate
 
 ## 🛠 Installation
 
+### Installing via PyPI
+
+You can install the package directly from PyPI:
+```bash
+pip install oireachtas-api
+```
+
 ### Installing directly from GitHub
 
-To install the latest release directly from GitHub:
+To install the latest development version directly from GitHub:
 ```bash
 pip install git+https://github.com/Irishsmurf/OireachtasAPI.git
 ```
@@ -122,7 +129,7 @@ This project tracks official releases automatically:
    git tag v2.0.0
    git push origin v2.0.0
    ```
-3. The **Release Workflow** will automatically build the package wheels and publish a drafted GitHub Release with build assets attached.
+3. The **Release Workflow** will automatically build the package wheels, publish a GitHub Release with build assets attached, and publish the release to PyPI using OIDC Trusted Publishing.
 
 ---
 
