@@ -89,6 +89,27 @@ class TestClient(unittest.TestCase):
 
         self.assertEqual(context.exception.status, 404)
 
+    @patch('oireachtas_api.api_client.ApiClient.call_api')
+    def test_constituencies_async(self, mock_call_api):
+        """Test constituencies call with async_req=True returns wrapped AsyncResult."""
+        mock_response = MagicMock()
+        mock_response.to_dict.return_value = {"results": []}
+
+        class ApplyResult:
+            def get(self, timeout=None):
+                return mock_response
+
+        mock_call_api.return_value = ApplyResult()
+
+        client = oireachtas_api.Client()
+        async_res = client.constituencies(limit=1, async_req=True)
+        
+        self.assertEqual(type(async_res).__name__, 'AsyncResult')
+        
+        response = async_res.get()
+        self.assertIsInstance(response, dict)
+        self.assertEqual(response, {"results": []})
+
     @pytest.mark.integration
     def test_client_integration(self):
         """Live integration tests for the simplified client."""

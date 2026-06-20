@@ -15,6 +15,21 @@ from oireachtas_api.api.parties_api import PartiesApi
 from oireachtas_api.api.questions_api import QuestionsApi
 
 
+class AsyncResult:
+    """A wrapper for multiprocessing.pool.ApplyResult that automatically converts
+    the retrieved OpenAPI models to standard Python dictionaries/lists.
+    """
+    def __init__(self, pool_result: Any, transform_fn: Any):
+        self._pool_result = pool_result
+        self._transform_fn = transform_fn
+
+    def get(self, timeout: Optional[float] = None) -> Any:
+        return self._transform_fn(self._pool_result.get(timeout))
+
+    def __getattr__(self, name: str) -> Any:
+        return getattr(self._pool_result, name)
+
+
 class Client:
     """A simplified, unified client wrapper for the Houses of the Oireachtas Open Data APIs."""
 
@@ -69,7 +84,9 @@ class Client:
 
     def _to_dict_or_raw(self, obj: Any) -> Any:
         """Recursively convert OpenAPI models to standard Python dictionaries/lists."""
-        if hasattr(obj, "to_dict"):
+        if type(obj).__name__ == 'ApplyResult':
+            return AsyncResult(obj, self._to_dict_or_raw)
+        if hasattr(obj, "to_dict") and callable(obj.to_dict):
             return obj.to_dict()
         elif isinstance(obj, list):
             return [self._to_dict_or_raw(item) for item in obj]
