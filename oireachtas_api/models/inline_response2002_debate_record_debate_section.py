@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecordDebateSection(object):
@@ -108,7 +107,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param text: The text of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: list[Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateText]
         """
-
         self._text = text
 
     @property
@@ -129,9 +127,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param show_as: The show_as of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -152,9 +147,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param debate_type: The debate_type of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: str
         """
-        if debate_type is None:
-            raise ValueError("Invalid value for `debate_type`, must not be `None`")  # noqa: E501
-
         self._debate_type = debate_type
 
     @property
@@ -175,9 +167,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param counts: The counts of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: InlineResponse2002DebateRecordDebateSectionCounts
         """
-        if counts is None:
-            raise ValueError("Invalid value for `counts`, must not be `None`")  # noqa: E501
-
         self._counts = counts
 
     @property
@@ -198,7 +187,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param speakers: The speakers of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: list[InlineResponse2002DebateRecordDebateSectionSpeakers]
         """
-
         self._speakers = speakers
 
     @property
@@ -219,9 +207,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param bill: The bill of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: object
         """
-        if bill is None:
-            raise ValueError("Invalid value for `bill`, must not be `None`")  # noqa: E501
-
         self._bill = bill
 
     @property
@@ -242,9 +227,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param contains_debate: The contains_debate of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: bool
         """
-        if contains_debate is None:
-            raise ValueError("Invalid value for `contains_debate`, must not be `None`")  # noqa: E501
-
         self._contains_debate = contains_debate
 
     @property
@@ -265,9 +247,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param uri: The uri of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -288,7 +267,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param debate_section_id: The debate_section_id of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: str
         """
-
         self._debate_section_id = debate_section_id
 
     @property
@@ -309,7 +287,6 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param formats: The formats of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: InlineResponse2001QuestionDebateSectionFormats
         """
-
         self._formats = formats
 
     @property
@@ -330,16 +307,13 @@ class InlineResponse2002DebateRecordDebateSection(object):
         :param parent_debate_section: The parent_debate_section of this InlineResponse2002DebateRecordDebateSection.  # noqa: E501
         :type: object
         """
-        if parent_debate_section is None:
-            raise ValueError("Invalid value for `parent_debate_section`, must not be `None`")  # noqa: E501
-
         self._parent_debate_section = parent_debate_section
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

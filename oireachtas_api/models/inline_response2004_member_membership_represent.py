@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004MemberMembershipRepresent(object):
@@ -80,7 +79,6 @@ class InlineResponse2004MemberMembershipRepresent(object):
         :param represent_code: The represent_code of this InlineResponse2004MemberMembershipRepresent.  # noqa: E501
         :type: str
         """
-
         self._represent_code = represent_code
 
     @property
@@ -101,7 +99,6 @@ class InlineResponse2004MemberMembershipRepresent(object):
         :param uri: The uri of this InlineResponse2004MemberMembershipRepresent.  # noqa: E501
         :type: str
         """
-
         self._uri = uri
 
     @property
@@ -122,7 +119,6 @@ class InlineResponse2004MemberMembershipRepresent(object):
         :param show_as: The show_as of this InlineResponse2004MemberMembershipRepresent.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     @property
@@ -143,14 +139,13 @@ class InlineResponse2004MemberMembershipRepresent(object):
         :param represent_type: The represent_type of this InlineResponse2004MemberMembershipRepresent.  # noqa: E501
         :type: str
         """
-
         self._represent_type = represent_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

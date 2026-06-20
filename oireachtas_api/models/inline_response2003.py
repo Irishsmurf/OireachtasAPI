@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003(object):
@@ -70,7 +69,6 @@ class InlineResponse2003(object):
         :param head: The head of this InlineResponse2003.  # noqa: E501
         :type: Paths1legislationgetresponses200schemapropertieshead
         """
-
         self._head = head
 
     @property
@@ -91,14 +89,13 @@ class InlineResponse2003(object):
         :param results: The results of this InlineResponse2003.  # noqa: E501
         :type: list[InlineResponse2003Results]
         """
-
         self._results = results
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

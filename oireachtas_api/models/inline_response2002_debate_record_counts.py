@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecordCounts(object):
@@ -80,9 +79,6 @@ class InlineResponse2002DebateRecordCounts(object):
         :param debate_section_count: The debate_section_count of this InlineResponse2002DebateRecordCounts.  # noqa: E501
         :type: int
         """
-        if debate_section_count is None:
-            raise ValueError("Invalid value for `debate_section_count`, must not be `None`")  # noqa: E501
-
         self._debate_section_count = debate_section_count
 
     @property
@@ -103,9 +99,6 @@ class InlineResponse2002DebateRecordCounts(object):
         :param contributor_count: The contributor_count of this InlineResponse2002DebateRecordCounts.  # noqa: E501
         :type: int
         """
-        if contributor_count is None:
-            raise ValueError("Invalid value for `contributor_count`, must not be `None`")  # noqa: E501
-
         self._contributor_count = contributor_count
 
     @property
@@ -126,9 +119,6 @@ class InlineResponse2002DebateRecordCounts(object):
         :param division_count: The division_count of this InlineResponse2002DebateRecordCounts.  # noqa: E501
         :type: int
         """
-        if division_count is None:
-            raise ValueError("Invalid value for `division_count`, must not be `None`")  # noqa: E501
-
         self._division_count = division_count
 
     @property
@@ -149,9 +139,6 @@ class InlineResponse2002DebateRecordCounts(object):
         :param question_count: The question_count of this InlineResponse2002DebateRecordCounts.  # noqa: E501
         :type: int
         """
-        if question_count is None:
-            raise ValueError("Invalid value for `question_count`, must not be `None`")  # noqa: E501
-
         self._question_count = question_count
 
     @property
@@ -172,16 +159,13 @@ class InlineResponse2002DebateRecordCounts(object):
         :param bill_count: The bill_count of this InlineResponse2002DebateRecordCounts.  # noqa: E501
         :type: int
         """
-        if bill_count is None:
-            raise ValueError("Invalid value for `bill_count`, must not be `None`")  # noqa: E501
-
         self._bill_count = bill_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

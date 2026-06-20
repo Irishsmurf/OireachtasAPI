@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003DivisionSubject(object):
@@ -68,9 +67,6 @@ class InlineResponse2003DivisionSubject(object):
         :param show_as: The show_as of this InlineResponse2003DivisionSubject.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -91,16 +87,13 @@ class InlineResponse2003DivisionSubject(object):
         :param uri: The uri of this InlineResponse2003DivisionSubject.  # noqa: E501
         :type: object
         """
-        if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

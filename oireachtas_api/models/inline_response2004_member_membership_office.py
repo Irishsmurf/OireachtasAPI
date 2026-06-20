@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004MemberMembershipOffice(object):
@@ -70,7 +69,6 @@ class InlineResponse2004MemberMembershipOffice(object):
         :param office_name: The office_name of this InlineResponse2004MemberMembershipOffice.  # noqa: E501
         :type: InlineResponse2004MemberMembershipOfficeOfficeName
         """
-
         self._office_name = office_name
 
     @property
@@ -91,14 +89,13 @@ class InlineResponse2004MemberMembershipOffice(object):
         :param date_range: The date_range of this InlineResponse2004MemberMembershipOffice.  # noqa: E501
         :type: InlineResponse2004MemberMembershipOfficeDateRange
         """
-
         self._date_range = date_range
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

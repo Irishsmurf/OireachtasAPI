@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecordDebateSectionCounts(object):
@@ -68,9 +67,6 @@ class InlineResponse2002DebateRecordDebateSectionCounts(object):
         :param speech_count: The speech_count of this InlineResponse2002DebateRecordDebateSectionCounts.  # noqa: E501
         :type: int
         """
-        if speech_count is None:
-            raise ValueError("Invalid value for `speech_count`, must not be `None`")  # noqa: E501
-
         self._speech_count = speech_count
 
     @property
@@ -91,16 +87,13 @@ class InlineResponse2002DebateRecordDebateSectionCounts(object):
         :param speaker_count: The speaker_count of this InlineResponse2002DebateRecordDebateSectionCounts.  # noqa: E501
         :type: int
         """
-        if speaker_count is None:
-            raise ValueError("Invalid value for `speaker_count`, must not be `None`")  # noqa: E501
-
         self._speaker_count = speaker_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

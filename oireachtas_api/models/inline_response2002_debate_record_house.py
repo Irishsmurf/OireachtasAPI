@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecordHouse(object):
@@ -84,9 +83,6 @@ class InlineResponse2002DebateRecordHouse(object):
         :param uri: The uri of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -107,9 +103,6 @@ class InlineResponse2002DebateRecordHouse(object):
         :param house_no: The house_no of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: str
         """
-        if house_no is None:
-            raise ValueError("Invalid value for `house_no`, must not be `None`")  # noqa: E501
-
         self._house_no = house_no
 
     @property
@@ -130,9 +123,6 @@ class InlineResponse2002DebateRecordHouse(object):
         :param show_as: The show_as of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -153,15 +143,6 @@ class InlineResponse2002DebateRecordHouse(object):
         :param house_code: The house_code of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: str
         """
-        if house_code is None:
-            raise ValueError("Invalid value for `house_code`, must not be `None`")  # noqa: E501
-        allowed_values = ["dail", "seanad"]  # noqa: E501
-        if house_code not in allowed_values:
-            raise ValueError(
-                "Invalid value for `house_code` ({0}), must be one of {1}"  # noqa: E501
-                .format(house_code, allowed_values)
-            )
-
         self._house_code = house_code
 
     @property
@@ -182,9 +163,6 @@ class InlineResponse2002DebateRecordHouse(object):
         :param committee_code: The committee_code of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: object
         """
-        if committee_code is None:
-            raise ValueError("Invalid value for `committee_code`, must not be `None`")  # noqa: E501
-
         self._committee_code = committee_code
 
     @property
@@ -205,22 +183,13 @@ class InlineResponse2002DebateRecordHouse(object):
         :param chamber_type: The chamber_type of this InlineResponse2002DebateRecordHouse.  # noqa: E501
         :type: str
         """
-        if chamber_type is None:
-            raise ValueError("Invalid value for `chamber_type`, must not be `None`")  # noqa: E501
-        allowed_values = ["house", "committee"]  # noqa: E501
-        if chamber_type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `chamber_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(chamber_type, allowed_values)
-            )
-
         self._chamber_type = chamber_type
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

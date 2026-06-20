@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004HeadDateRange(object):
@@ -70,7 +69,6 @@ class InlineResponse2004HeadDateRange(object):
         :param start: The start of this InlineResponse2004HeadDateRange.  # noqa: E501
         :type: str
         """
-
         self._start = start
 
     @property
@@ -91,14 +89,13 @@ class InlineResponse2004HeadDateRange(object):
         :param end: The end of this InlineResponse2004HeadDateRange.  # noqa: E501
         :type: str
         """
-
         self._end = end
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

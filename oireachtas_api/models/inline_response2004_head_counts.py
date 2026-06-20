@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004HeadCounts(object):
@@ -70,7 +69,6 @@ class InlineResponse2004HeadCounts(object):
         :param member_count: The member_count of this InlineResponse2004HeadCounts.  # noqa: E501
         :type: int
         """
-
         self._member_count = member_count
 
     @property
@@ -91,14 +89,13 @@ class InlineResponse2004HeadCounts(object):
         :param result_count: The result_count of this InlineResponse2004HeadCounts.  # noqa: E501
         :type: int
         """
-
         self._result_count = result_count
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

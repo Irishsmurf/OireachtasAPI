@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2001QuestionDebateSectionFormats(object):
@@ -68,9 +67,6 @@ class InlineResponse2001QuestionDebateSectionFormats(object):
         :param pdf: The pdf of this InlineResponse2001QuestionDebateSectionFormats.  # noqa: E501
         :type: object
         """
-        if pdf is None:
-            raise ValueError("Invalid value for `pdf`, must not be `None`")  # noqa: E501
-
         self._pdf = pdf
 
     @property
@@ -91,16 +87,13 @@ class InlineResponse2001QuestionDebateSectionFormats(object):
         :param xml: The xml of this InlineResponse2001QuestionDebateSectionFormats.  # noqa: E501
         :type: object
         """
-        if xml is None:
-            raise ValueError("Invalid value for `xml`, must not be `None`")  # noqa: E501
-
         self._xml = xml
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

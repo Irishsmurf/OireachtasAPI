@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002Results(object):
@@ -64,16 +63,13 @@ class InlineResponse2002Results(object):
         :param debate_record: The debate_record of this InlineResponse2002Results.  # noqa: E501
         :type: InlineResponse2002DebateRecord
         """
-        if debate_record is None:
-            raise ValueError("Invalid value for `debate_record`, must not be `None`")  # noqa: E501
-
         self._debate_record = debate_record
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004MemberMembershipOfficeOfficeName(object):
@@ -65,14 +64,13 @@ class InlineResponse2004MemberMembershipOfficeOfficeName(object):
         :param show_as: The show_as of this InlineResponse2004MemberMembershipOfficeOfficeName.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

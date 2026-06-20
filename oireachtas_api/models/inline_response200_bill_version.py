@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse200BillVersion(object):
@@ -85,9 +84,6 @@ class InlineResponse200BillVersion(object):
         :param _date: The _date of this InlineResponse200BillVersion.  # noqa: E501
         :type: str
         """
-        if _date is None:
-            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
-
         self.__date = _date
 
     @property
@@ -108,9 +104,6 @@ class InlineResponse200BillVersion(object):
         :param formats: The formats of this InlineResponse200BillVersion.  # noqa: E501
         :type: Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsversionFormats
         """
-        if formats is None:
-            raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
-
         self._formats = formats
 
     @property
@@ -131,7 +124,6 @@ class InlineResponse200BillVersion(object):
         :param text: The text of this InlineResponse200BillVersion.  # noqa: E501
         :type: str
         """
-
         self._text = text
 
     @property
@@ -152,15 +144,6 @@ class InlineResponse200BillVersion(object):
         :param lang: The lang of this InlineResponse200BillVersion.  # noqa: E501
         :type: str
         """
-        if lang is None:
-            raise ValueError("Invalid value for `lang`, must not be `None`")  # noqa: E501
-        allowed_values = ["eng", "gle"]  # noqa: E501
-        if lang not in allowed_values:
-            raise ValueError(
-                "Invalid value for `lang` ({0}), must be one of {1}"  # noqa: E501
-                .format(lang, allowed_values)
-            )
-
         self._lang = lang
 
     @property
@@ -181,9 +164,6 @@ class InlineResponse200BillVersion(object):
         :param show_as: The show_as of this InlineResponse200BillVersion.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -204,16 +184,13 @@ class InlineResponse200BillVersion(object):
         :param uri: The uri of this InlineResponse200BillVersion.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

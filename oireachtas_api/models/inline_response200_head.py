@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse200Head(object):
@@ -75,7 +74,6 @@ class InlineResponse200Head(object):
         :param counts: The counts of this InlineResponse200Head.  # noqa: E501
         :type: object
         """
-
         self._counts = counts
 
     @property
@@ -96,7 +94,6 @@ class InlineResponse200Head(object):
         :param date_range: The date_range of this InlineResponse200Head.  # noqa: E501
         :type: InlineResponse200HeadDateRange
         """
-
         self._date_range = date_range
 
     @property
@@ -117,20 +114,13 @@ class InlineResponse200Head(object):
         :param lang: The lang of this InlineResponse200Head.  # noqa: E501
         :type: str
         """
-        allowed_values = ["en", "ga", "mul"]  # noqa: E501
-        if lang not in allowed_values:
-            raise ValueError(
-                "Invalid value for `lang` ({0}), must be one of {1}"  # noqa: E501
-                .format(lang, allowed_values)
-            )
-
         self._lang = lang
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

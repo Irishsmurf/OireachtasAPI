@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2004Head(object):
@@ -75,7 +74,6 @@ class InlineResponse2004Head(object):
         :param counts: The counts of this InlineResponse2004Head.  # noqa: E501
         :type: InlineResponse2004HeadCounts
         """
-
         self._counts = counts
 
     @property
@@ -96,7 +94,6 @@ class InlineResponse2004Head(object):
         :param date_range: The date_range of this InlineResponse2004Head.  # noqa: E501
         :type: InlineResponse2004HeadDateRange
         """
-
         self._date_range = date_range
 
     @property
@@ -117,14 +114,13 @@ class InlineResponse2004Head(object):
         :param lang: The lang of this InlineResponse2004Head.  # noqa: E501
         :type: str
         """
-
         self._lang = lang
 
     def to_dict(self):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
