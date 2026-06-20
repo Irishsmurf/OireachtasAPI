@@ -64,7 +64,6 @@ class InlineResponse2003Results(object):
         :param division: The division of this InlineResponse2003Results.  # noqa: E501
         :type: InlineResponse2003Division
         """
-
         self._division = division
 
     def to_dict(self):

@@ -63,9 +63,6 @@ class InlineResponse2002DebateRecordDebateSections(object):
         :param debate_section: The debate_section of this InlineResponse2002DebateRecordDebateSections.  # noqa: E501
         :type: InlineResponse2002DebateRecordDebateSection
         """
-        if debate_section is None:
-            pass # raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
-
         self._debate_section = debate_section
 
     def to_dict(self):

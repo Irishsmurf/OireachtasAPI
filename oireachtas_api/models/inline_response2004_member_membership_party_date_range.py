@@ -64,7 +64,6 @@ class InlineResponse2004MemberMembershipPartyDateRange(object):
         :param start: The start of this InlineResponse2004MemberMembershipPartyDateRange.  # noqa: E501
         :type: str
         """
-
         self._start = start
 
     def to_dict(self):

@@ -74,7 +74,6 @@ class InlineResponse2004Head(object):
         :param counts: The counts of this InlineResponse2004Head.  # noqa: E501
         :type: InlineResponse2004HeadCounts
         """
-
         self._counts = counts
 
     @property
@@ -95,7 +94,6 @@ class InlineResponse2004Head(object):
         :param date_range: The date_range of this InlineResponse2004Head.  # noqa: E501
         :type: InlineResponse2004HeadDateRange
         """
-
         self._date_range = date_range
 
     @property
@@ -116,7 +114,6 @@ class InlineResponse2004Head(object):
         :param lang: The lang of this InlineResponse2004Head.  # noqa: E501
         :type: str
         """
-
         self._lang = lang
 
     def to_dict(self):

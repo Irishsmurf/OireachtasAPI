@@ -69,7 +69,6 @@ class InlineResponse2004MemberMembershipOfficeDateRange(object):
         :param end: The end of this InlineResponse2004MemberMembershipOfficeDateRange.  # noqa: E501
         :type: str
         """
-
         self._end = end
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse2004MemberMembershipOfficeDateRange(object):
         :param start: The start of this InlineResponse2004MemberMembershipOfficeDateRange.  # noqa: E501
         :type: str
         """
-
         self._start = start
 
     def to_dict(self):

@@ -63,9 +63,6 @@ class InlineResponse2001Results(object):
         :param question: The question of this InlineResponse2001Results.  # noqa: E501
         :type: InlineResponse2001Question
         """
-        if question is None:
-            pass # raise ValueError("Invalid value for `question`, must not be `None`")  # noqa: E501
-
         self._question = question
 
     def to_dict(self):

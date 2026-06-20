@@ -75,9 +75,6 @@ class InlineResponse2003DivisionDebate(object):
         :param show_as: The show_as of this InlineResponse2003DivisionDebate.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -98,11 +95,6 @@ class InlineResponse2003DivisionDebate(object):
         :param uri: The uri of this InlineResponse2003DivisionDebate.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-        if uri is not None and not re.search(r'^\/akn\/ie\/debateRecord\/[a-záéíóú_,-]+\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/debate\/main$', uri):  # noqa: E501
-            raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/akn\/ie\/debateRecord\/[a-záéíóú_,-]+\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/debate\/main$/`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -123,9 +115,6 @@ class InlineResponse2003DivisionDebate(object):
         :param formats: The formats of this InlineResponse2003DivisionDebate.  # noqa: E501
         :type: InlineResponse2001QuestionDebateSectionFormats
         """
-        if formats is None:
-            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
-
         self._formats = formats
 
     @property
@@ -146,9 +135,6 @@ class InlineResponse2003DivisionDebate(object):
         :param debate_section: The debate_section of this InlineResponse2003DivisionDebate.  # noqa: E501
         :type: str
         """
-        if debate_section is None:
-            pass # raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
-
         self._debate_section = debate_section
 
     def to_dict(self):

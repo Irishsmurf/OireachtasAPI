@@ -64,7 +64,6 @@ class InlineResponse200BillAmendmentLists(object):
         :param amendment_list: The amendment_list of this InlineResponse200BillAmendmentLists.  # noqa: E501
         :type: Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsAmendmentList
         """
-
         self._amendment_list = amendment_list
 
     def to_dict(self):

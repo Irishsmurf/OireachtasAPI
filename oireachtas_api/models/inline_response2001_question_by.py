@@ -71,9 +71,6 @@ class InlineResponse2001QuestionBy(object):
         :param show_as: The show_as of this InlineResponse2001QuestionBy.  # noqa: E501
         :type: object
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -94,9 +91,6 @@ class InlineResponse2001QuestionBy(object):
         :param uri: The uri of this InlineResponse2001QuestionBy.  # noqa: E501
         :type: object
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -117,9 +111,6 @@ class InlineResponse2001QuestionBy(object):
         :param member_code: The member_code of this InlineResponse2001QuestionBy.  # noqa: E501
         :type: object
         """
-        if member_code is None:
-            pass # raise ValueError("Invalid value for `member_code`, must not be `None`")  # noqa: E501
-
         self._member_code = member_code
 
     def to_dict(self):

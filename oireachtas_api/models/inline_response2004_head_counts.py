@@ -69,7 +69,6 @@ class InlineResponse2004HeadCounts(object):
         :param member_count: The member_count of this InlineResponse2004HeadCounts.  # noqa: E501
         :type: int
         """
-
         self._member_count = member_count
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse2004HeadCounts(object):
         :param result_count: The result_count of this InlineResponse2004HeadCounts.  # noqa: E501
         :type: int
         """
-
         self._result_count = result_count
 
     def to_dict(self):

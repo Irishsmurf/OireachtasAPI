@@ -63,9 +63,6 @@ class InlineResponse200BillStages(object):
         :param event: The event of this InlineResponse200BillStages.  # noqa: E501
         :type: Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsEvent
         """
-        if event is None:
-            pass # raise ValueError("Invalid value for `event`, must not be `None`")  # noqa: E501
-
         self._event = event
 
     def to_dict(self):

@@ -64,7 +64,6 @@ class InlineResponse2004Results(object):
         :param member: The member of this InlineResponse2004Results.  # noqa: E501
         :type: InlineResponse2004Member
         """
-
         self._member = member
 
     def to_dict(self):

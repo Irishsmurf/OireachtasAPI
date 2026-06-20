@@ -67,9 +67,6 @@ class InlineResponse2001QuestionDebateSectionFormats(object):
         :param pdf: The pdf of this InlineResponse2001QuestionDebateSectionFormats.  # noqa: E501
         :type: object
         """
-        if pdf is None:
-            pass # raise ValueError("Invalid value for `pdf`, must not be `None`")  # noqa: E501
-
         self._pdf = pdf
 
     @property
@@ -90,9 +87,6 @@ class InlineResponse2001QuestionDebateSectionFormats(object):
         :param xml: The xml of this InlineResponse2001QuestionDebateSectionFormats.  # noqa: E501
         :type: object
         """
-        if xml is None:
-            pass # raise ValueError("Invalid value for `xml`, must not be `None`")  # noqa: E501
-
         self._xml = xml
 
     def to_dict(self):

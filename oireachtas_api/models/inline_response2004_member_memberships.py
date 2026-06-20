@@ -64,7 +64,6 @@ class InlineResponse2004MemberMemberships(object):
         :param membership: The membership of this InlineResponse2004MemberMemberships.  # noqa: E501
         :type: InlineResponse2004MemberMembership
         """
-
         self._membership = membership
 
     def to_dict(self):

@@ -64,7 +64,6 @@ class InlineResponse2004MemberMembershipOffices(object):
         :param office: The office of this InlineResponse2004MemberMembershipOffices.  # noqa: E501
         :type: InlineResponse2004MemberMembershipOffice
         """
-
         self._office = office
 
     def to_dict(self):

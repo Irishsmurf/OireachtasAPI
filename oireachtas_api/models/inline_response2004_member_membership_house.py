@@ -84,7 +84,6 @@ class InlineResponse2004MemberMembershipHouse(object):
         :param house_code: The house_code of this InlineResponse2004MemberMembershipHouse.  # noqa: E501
         :type: str
         """
-
         self._house_code = house_code
 
     @property
@@ -105,7 +104,6 @@ class InlineResponse2004MemberMembershipHouse(object):
         :param uri: The uri of this InlineResponse2004MemberMembershipHouse.  # noqa: E501
         :type: str
         """
-
         self._uri = uri
 
     @property
@@ -126,7 +124,6 @@ class InlineResponse2004MemberMembershipHouse(object):
         :param house_no: The house_no of this InlineResponse2004MemberMembershipHouse.  # noqa: E501
         :type: str
         """
-
         self._house_no = house_no
 
     @property
@@ -147,7 +144,6 @@ class InlineResponse2004MemberMembershipHouse(object):
         :param show_as: The show_as of this InlineResponse2004MemberMembershipHouse.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     @property
@@ -168,7 +164,6 @@ class InlineResponse2004MemberMembershipHouse(object):
         :param chamber_type: The chamber_type of this InlineResponse2004MemberMembershipHouse.  # noqa: E501
         :type: str
         """
-
         self._chamber_type = chamber_type
 
     def to_dict(self):

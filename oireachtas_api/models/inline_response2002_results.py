@@ -63,9 +63,6 @@ class InlineResponse2002Results(object):
         :param debate_record: The debate_record of this InlineResponse2002Results.  # noqa: E501
         :type: InlineResponse2002DebateRecord
         """
-        if debate_record is None:
-            pass # raise ValueError("Invalid value for `debate_record`, must not be `None`")  # noqa: E501
-
         self._debate_record = debate_record
 
     def to_dict(self):

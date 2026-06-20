@@ -89,7 +89,6 @@ class InlineResponse2004MemberMembership(object):
         :param parties: The parties of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: list[InlineResponse2004MemberMembershipParties]
         """
-
         self._parties = parties
 
     @property
@@ -110,7 +109,6 @@ class InlineResponse2004MemberMembership(object):
         :param house: The house of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: InlineResponse2004MemberMembershipHouse
         """
-
         self._house = house
 
     @property
@@ -131,7 +129,6 @@ class InlineResponse2004MemberMembership(object):
         :param offices: The offices of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: list[InlineResponse2004MemberMembershipOffices]
         """
-
         self._offices = offices
 
     @property
@@ -152,7 +149,6 @@ class InlineResponse2004MemberMembership(object):
         :param uri: The uri of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: str
         """
-
         self._uri = uri
 
     @property
@@ -173,7 +169,6 @@ class InlineResponse2004MemberMembership(object):
         :param represents: The represents of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: list[InlineResponse2004MemberMembershipRepresents]
         """
-
         self._represents = represents
 
     @property
@@ -194,7 +189,6 @@ class InlineResponse2004MemberMembership(object):
         :param date_range: The date_range of this InlineResponse2004MemberMembership.  # noqa: E501
         :type: InlineResponse2004MemberMembershipPartyDateRange
         """
-
         self._date_range = date_range
 
     def to_dict(self):

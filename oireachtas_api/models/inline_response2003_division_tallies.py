@@ -72,9 +72,6 @@ class InlineResponse2003DivisionTallies(object):
         :param nil_votes: The nil_votes of this InlineResponse2003DivisionTallies.  # noqa: E501
         :type: Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally
         """
-        if nil_votes is None:
-            pass # raise ValueError("Invalid value for `nil_votes`, must not be `None`")  # noqa: E501
-
         self._nil_votes = nil_votes
 
     @property
@@ -95,9 +92,6 @@ class InlineResponse2003DivisionTallies(object):
         :param ta_votes: The ta_votes of this InlineResponse2003DivisionTallies.  # noqa: E501
         :type: Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally
         """
-        if ta_votes is None:
-            pass # raise ValueError("Invalid value for `ta_votes`, must not be `None`")  # noqa: E501
-
         self._ta_votes = ta_votes
 
     @property
@@ -118,7 +112,6 @@ class InlineResponse2003DivisionTallies(object):
         :param staon_votes: The staon_votes of this InlineResponse2003DivisionTallies.  # noqa: E501
         :type: object
         """
-
         self._staon_votes = staon_votes
 
     def to_dict(self):

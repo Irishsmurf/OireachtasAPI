@@ -64,7 +64,6 @@ class InlineResponse2004MemberMembershipParties(object):
         :param party: The party of this InlineResponse2004MemberMembershipParties.  # noqa: E501
         :type: InlineResponse2004MemberMembershipParty
         """
-
         self._party = party
 
     def to_dict(self):

@@ -91,9 +91,6 @@ class InlineResponse2002DebateRecord(object):
         :param last_updated: The last_updated of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: datetime
         """
-        if last_updated is None:
-            pass # raise ValueError("Invalid value for `last_updated`, must not be `None`")  # noqa: E501
-
         self._last_updated = last_updated
 
     @property
@@ -114,9 +111,6 @@ class InlineResponse2002DebateRecord(object):
         :param chamber: The chamber of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: InlineResponse2002DebateRecordChamber
         """
-        if chamber is None:
-            pass # raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
-
         self._chamber = chamber
 
     @property
@@ -137,9 +131,6 @@ class InlineResponse2002DebateRecord(object):
         :param house: The house of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: InlineResponse2002DebateRecordHouse
         """
-        if house is None:
-            pass # raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
-
         self._house = house
 
     @property
@@ -160,9 +151,6 @@ class InlineResponse2002DebateRecord(object):
         :param counts: The counts of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: InlineResponse2002DebateRecordCounts
         """
-        if counts is None:
-            pass # raise ValueError("Invalid value for `counts`, must not be `None`")  # noqa: E501
-
         self._counts = counts
 
     @property
@@ -183,9 +171,6 @@ class InlineResponse2002DebateRecord(object):
         :param uri: The uri of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -206,9 +191,6 @@ class InlineResponse2002DebateRecord(object):
         :param formats: The formats of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateFormats
         """
-        if formats is None:
-            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
-
         self._formats = formats
 
     @property
@@ -229,9 +211,6 @@ class InlineResponse2002DebateRecord(object):
         :param debate_sections: The debate_sections of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: list[InlineResponse2002DebateRecordDebateSections]
         """
-        if debate_sections is None:
-            pass # raise ValueError("Invalid value for `debate_sections`, must not be `None`")  # noqa: E501
-
         self._debate_sections = debate_sections
 
     @property
@@ -252,9 +231,6 @@ class InlineResponse2002DebateRecord(object):
         :param _date: The _date of this InlineResponse2002DebateRecord.  # noqa: E501
         :type: str
         """
-        if _date is None:
-            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
-
         self.__date = _date
 
     def to_dict(self):

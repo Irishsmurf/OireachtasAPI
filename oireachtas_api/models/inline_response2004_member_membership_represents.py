@@ -64,7 +64,6 @@ class InlineResponse2004MemberMembershipRepresents(object):
         :param represent: The represent of this InlineResponse2004MemberMembershipRepresents.  # noqa: E501
         :type: InlineResponse2004MemberMembershipRepresent
         """
-
         self._represent = represent
 
     def to_dict(self):

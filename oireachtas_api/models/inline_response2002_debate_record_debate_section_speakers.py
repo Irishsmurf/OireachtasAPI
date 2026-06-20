@@ -63,9 +63,6 @@ class InlineResponse2002DebateRecordDebateSectionSpeakers(object):
         :param speaker: The speaker of this InlineResponse2002DebateRecordDebateSectionSpeakers.  # noqa: E501
         :type: Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateSpeaker
         """
-        if speaker is None:
-            pass # raise ValueError("Invalid value for `speaker`, must not be `None`")  # noqa: E501
-
         self._speaker = speaker
 
     def to_dict(self):

@@ -64,7 +64,6 @@ class InlineResponse2004MemberMembershipOfficeOfficeName(object):
         :param show_as: The show_as of this InlineResponse2004MemberMembershipOfficeOfficeName.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     def to_dict(self):

@@ -63,9 +63,6 @@ class InlineResponse200Results(object):
         :param bill: The bill of this InlineResponse200Results.  # noqa: E501
         :type: InlineResponse200Bill
         """
-        if bill is None:
-            pass # raise ValueError("Invalid value for `bill`, must not be `None`")  # noqa: E501
-
         self._bill = bill
 
     def to_dict(self):

@@ -69,7 +69,6 @@ class InlineResponse200HeadDateRange(object):
         :param start: The start of this InlineResponse200HeadDateRange.  # noqa: E501
         :type: datetime
         """
-
         self._start = start
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse200HeadDateRange(object):
         :param end: The end of this InlineResponse200HeadDateRange.  # noqa: E501
         :type: datetime
         """
-
         self._end = end
 
     def to_dict(self):

@@ -111,9 +111,6 @@ class InlineResponse2003Division(object):
         :param is_bill: The is_bill of this InlineResponse2003Division.  # noqa: E501
         :type: bool
         """
-        if is_bill is None:
-            pass # raise ValueError("Invalid value for `is_bill`, must not be `None`")  # noqa: E501
-
         self._is_bill = is_bill
 
     @property
@@ -134,9 +131,6 @@ class InlineResponse2003Division(object):
         :param debate: The debate of this InlineResponse2003Division.  # noqa: E501
         :type: InlineResponse2003DivisionDebate
         """
-        if debate is None:
-            pass # raise ValueError("Invalid value for `debate`, must not be `None`")  # noqa: E501
-
         self._debate = debate
 
     @property
@@ -157,9 +151,6 @@ class InlineResponse2003Division(object):
         :param vote_id: The vote_id of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if vote_id is None:
-            pass # raise ValueError("Invalid value for `vote_id`, must not be `None`")  # noqa: E501
-
         self._vote_id = vote_id
 
     @property
@@ -180,9 +171,6 @@ class InlineResponse2003Division(object):
         :param _datetime: The _datetime of this InlineResponse2003Division.  # noqa: E501
         :type: object
         """
-        if _datetime is None:
-            pass # raise ValueError("Invalid value for `_datetime`, must not be `None`")  # noqa: E501
-
         self.__datetime = _datetime
 
     @property
@@ -203,9 +191,6 @@ class InlineResponse2003Division(object):
         :param tallies: The tallies of this InlineResponse2003Division.  # noqa: E501
         :type: InlineResponse2003DivisionTallies
         """
-        if tallies is None:
-            pass # raise ValueError("Invalid value for `tallies`, must not be `None`")  # noqa: E501
-
         self._tallies = tallies
 
     @property
@@ -226,9 +211,6 @@ class InlineResponse2003Division(object):
         :param chamber: The chamber of this InlineResponse2003Division.  # noqa: E501
         :type: InlineResponse200BillOriginHouse
         """
-        if chamber is None:
-            pass # raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
-
         self._chamber = chamber
 
     @property
@@ -249,9 +231,6 @@ class InlineResponse2003Division(object):
         :param category: The category of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if category is None:
-            pass # raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
-
         self._category = category
 
     @property
@@ -272,9 +251,6 @@ class InlineResponse2003Division(object):
         :param subject: The subject of this InlineResponse2003Division.  # noqa: E501
         :type: InlineResponse2003DivisionSubject
         """
-        if subject is None:
-            pass # raise ValueError("Invalid value for `subject`, must not be `None`")  # noqa: E501
-
         self._subject = subject
 
     @property
@@ -295,11 +271,6 @@ class InlineResponse2003Division(object):
         :param uri: The uri of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-        if uri is not None and not re.search(r'^\/ie\/oireachtas\/division\/(house|committee)\/(seanad|dail)\/[0-9]+\/', uri):  # noqa: E501
-            raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/ie\/oireachtas\/division\/(house|committee)\/(seanad|dail)\/[0-9]+\//`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -320,9 +291,6 @@ class InlineResponse2003Division(object):
         :param outcome: The outcome of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if outcome is None:
-            pass # raise ValueError("Invalid value for `outcome`, must not be `None`")  # noqa: E501
-
         self._outcome = outcome
 
     @property
@@ -343,9 +311,6 @@ class InlineResponse2003Division(object):
         :param tellers: The tellers of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if tellers is None:
-            pass # raise ValueError("Invalid value for `tellers`, must not be `None`")  # noqa: E501
-
         self._tellers = tellers
 
     @property
@@ -366,9 +331,6 @@ class InlineResponse2003Division(object):
         :param house: The house of this InlineResponse2003Division.  # noqa: E501
         :type: InlineResponse2003DivisionHouse
         """
-        if house is None:
-            pass # raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
-
         self._house = house
 
     @property
@@ -389,11 +351,6 @@ class InlineResponse2003Division(object):
         :param _date: The _date of this InlineResponse2003Division.  # noqa: E501
         :type: str
         """
-        if _date is None:
-            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
-        if _date is not None and not re.search(r'^[0-9]{4}-[0-9]{2}-[0-9]{2}$', _date):  # noqa: E501
-            raise ValueError(r"Invalid value for `_date`, must be a follow pattern or equal to `/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/`")  # noqa: E501
-
         self.__date = _date
 
     def to_dict(self):

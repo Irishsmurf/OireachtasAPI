@@ -75,9 +75,6 @@ class InlineResponse2001QuestionTo(object):
         :param show_as: The show_as of this InlineResponse2001QuestionTo.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -98,9 +95,6 @@ class InlineResponse2001QuestionTo(object):
         :param uri: The uri of this InlineResponse2001QuestionTo.  # noqa: E501
         :type: object
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -121,9 +115,6 @@ class InlineResponse2001QuestionTo(object):
         :param role_type: The role_type of this InlineResponse2001QuestionTo.  # noqa: E501
         :type: object
         """
-        if role_type is None:
-            pass # raise ValueError("Invalid value for `role_type`, must not be `None`")  # noqa: E501
-
         self._role_type = role_type
 
     @property
@@ -144,9 +135,6 @@ class InlineResponse2001QuestionTo(object):
         :param role_code: The role_code of this InlineResponse2001QuestionTo.  # noqa: E501
         :type: object
         """
-        if role_code is None:
-            pass # raise ValueError("Invalid value for `role_code`, must not be `None`")  # noqa: E501
-
         self._role_code = role_code
 
     def to_dict(self):

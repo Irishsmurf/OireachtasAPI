@@ -79,7 +79,6 @@ class InlineResponse2004MemberMembershipParty(object):
         :param party_code: The party_code of this InlineResponse2004MemberMembershipParty.  # noqa: E501
         :type: str
         """
-
         self._party_code = party_code
 
     @property
@@ -100,7 +99,6 @@ class InlineResponse2004MemberMembershipParty(object):
         :param uri: The uri of this InlineResponse2004MemberMembershipParty.  # noqa: E501
         :type: str
         """
-
         self._uri = uri
 
     @property
@@ -121,7 +119,6 @@ class InlineResponse2004MemberMembershipParty(object):
         :param show_as: The show_as of this InlineResponse2004MemberMembershipParty.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     @property
@@ -142,7 +139,6 @@ class InlineResponse2004MemberMembershipParty(object):
         :param date_range: The date_range of this InlineResponse2004MemberMembershipParty.  # noqa: E501
         :type: InlineResponse2004MemberMembershipPartyDateRange
         """
-
         self._date_range = date_range
 
     def to_dict(self):

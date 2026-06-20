@@ -63,9 +63,6 @@ class ErrorResponse(object):
         :param message: The message of this ErrorResponse.  # noqa: E501
         :type: str
         """
-        if message is None:
-            pass # raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
-
         self._message = message
 
     def to_dict(self):

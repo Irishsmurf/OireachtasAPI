@@ -69,7 +69,6 @@ class InlineResponse200(object):
         :param head: The head of this InlineResponse200.  # noqa: E501
         :type: InlineResponse200Head
         """
-
         self._head = head
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse200(object):
         :param results: The results of this InlineResponse200.  # noqa: E501
         :type: list[InlineResponse200Results]
         """
-
         self._results = results
 
     def to_dict(self):

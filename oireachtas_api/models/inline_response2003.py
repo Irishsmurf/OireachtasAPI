@@ -69,7 +69,6 @@ class InlineResponse2003(object):
         :param head: The head of this InlineResponse2003.  # noqa: E501
         :type: Paths1legislationgetresponses200schemapropertieshead
         """
-
         self._head = head
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse2003(object):
         :param results: The results of this InlineResponse2003.  # noqa: E501
         :type: list[InlineResponse2003Results]
         """
-
         self._results = results
 
     def to_dict(self):

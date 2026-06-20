@@ -114,7 +114,6 @@ class InlineResponse2004Member(object):
         :param show_as: The show_as of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._show_as = show_as
 
     @property
@@ -135,7 +134,6 @@ class InlineResponse2004Member(object):
         :param last_name: The last_name of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._last_name = last_name
 
     @property
@@ -156,7 +154,6 @@ class InlineResponse2004Member(object):
         :param first_name: The first_name of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._first_name = first_name
 
     @property
@@ -177,7 +174,6 @@ class InlineResponse2004Member(object):
         :param gender: The gender of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._gender = gender
 
     @property
@@ -198,7 +194,6 @@ class InlineResponse2004Member(object):
         :param memberships: The memberships of this InlineResponse2004Member.  # noqa: E501
         :type: list[InlineResponse2004MemberMemberships]
         """
-
         self._memberships = memberships
 
     @property
@@ -219,7 +214,6 @@ class InlineResponse2004Member(object):
         :param uri: The uri of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._uri = uri
 
     @property
@@ -240,7 +234,6 @@ class InlineResponse2004Member(object):
         :param wiki_title: The wiki_title of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._wiki_title = wiki_title
 
     @property
@@ -261,7 +254,6 @@ class InlineResponse2004Member(object):
         :param full_name: The full_name of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._full_name = full_name
 
     @property
@@ -282,7 +274,6 @@ class InlineResponse2004Member(object):
         :param member_code: The member_code of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._member_code = member_code
 
     @property
@@ -303,7 +294,6 @@ class InlineResponse2004Member(object):
         :param image: The image of this InlineResponse2004Member.  # noqa: E501
         :type: bool
         """
-
         self._image = image
 
     @property
@@ -324,7 +314,6 @@ class InlineResponse2004Member(object):
         :param p_id: The p_id of this InlineResponse2004Member.  # noqa: E501
         :type: str
         """
-
         self._p_id = p_id
 
     def to_dict(self):

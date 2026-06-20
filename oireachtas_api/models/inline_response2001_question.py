@@ -96,9 +96,6 @@ class InlineResponse2001Question(object):
         :param question_number: The question_number of this InlineResponse2001Question.  # noqa: E501
         :type: int
         """
-        if question_number is None:
-            pass # raise ValueError("Invalid value for `question_number`, must not be `None`")  # noqa: E501
-
         self._question_number = question_number
 
     @property
@@ -119,11 +116,6 @@ class InlineResponse2001Question(object):
         :param uri: The uri of this InlineResponse2001Question.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-        if uri is not None and not re.search(r'^\/ie\/oireachtas\/question\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/pq_[0-9]+$', uri):  # noqa: E501
-            raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/ie\/oireachtas\/question\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/pq_[0-9]+$/`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -144,15 +136,6 @@ class InlineResponse2001Question(object):
         :param question_type: The question_type of this InlineResponse2001Question.  # noqa: E501
         :type: str
         """
-        if question_type is None:
-            pass # raise ValueError("Invalid value for `question_type`, must not be `None`")  # noqa: E501
-        allowed_values = ["oral", "written"]  # noqa: E501
-        # if question_type not in allowed_values:
-        # raise ValueError(
-        # "Invalid value for `question_type` ({0}), must be one of {1}"  # noqa: E501
-        # .format(question_type, allowed_values)
-        # )
-
         self._question_type = question_type
 
     @property
@@ -173,9 +156,6 @@ class InlineResponse2001Question(object):
         :param by: The by of this InlineResponse2001Question.  # noqa: E501
         :type: InlineResponse2001QuestionBy
         """
-        if by is None:
-            pass # raise ValueError("Invalid value for `by`, must not be `None`")  # noqa: E501
-
         self._by = by
 
     @property
@@ -196,9 +176,6 @@ class InlineResponse2001Question(object):
         :param _date: The _date of this InlineResponse2001Question.  # noqa: E501
         :type: str
         """
-        if _date is None:
-            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
-
         self.__date = _date
 
     @property
@@ -219,9 +196,6 @@ class InlineResponse2001Question(object):
         :param debate_section: The debate_section of this InlineResponse2001Question.  # noqa: E501
         :type: InlineResponse2001QuestionDebateSection
         """
-        if debate_section is None:
-            pass # raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
-
         self._debate_section = debate_section
 
     @property
@@ -242,9 +216,6 @@ class InlineResponse2001Question(object):
         :param show_as: The show_as of this InlineResponse2001Question.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -265,7 +236,6 @@ class InlineResponse2001Question(object):
         :param answer_text: The answer_text of this InlineResponse2001Question.  # noqa: E501
         :type: str
         """
-
         self._answer_text = answer_text
 
     @property
@@ -286,9 +256,6 @@ class InlineResponse2001Question(object):
         :param to: The to of this InlineResponse2001Question.  # noqa: E501
         :type: InlineResponse2001QuestionTo
         """
-        if to is None:
-            pass # raise ValueError("Invalid value for `to`, must not be `None`")  # noqa: E501
-
         self._to = to
 
     def to_dict(self):

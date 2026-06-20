@@ -75,11 +75,6 @@ class InlineResponse2001QuestionDebateSection(object):
         :param debate_section_id: The debate_section_id of this InlineResponse2001QuestionDebateSection.  # noqa: E501
         :type: str
         """
-        if debate_section_id is None:
-            pass # raise ValueError("Invalid value for `debate_section_id`, must not be `None`")  # noqa: E501
-        if debate_section_id is not None and not re.search(r'^dbsect_[0-9]+$', debate_section_id):  # noqa: E501
-            raise ValueError(r"Invalid value for `debate_section_id`, must be a follow pattern or equal to `/^dbsect_[0-9]+$/`")  # noqa: E501
-
         self._debate_section_id = debate_section_id
 
     @property
@@ -100,9 +95,6 @@ class InlineResponse2001QuestionDebateSection(object):
         :param show_as: The show_as of this InlineResponse2001QuestionDebateSection.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -123,11 +115,6 @@ class InlineResponse2001QuestionDebateSection(object):
         :param uri: The uri of this InlineResponse2001QuestionDebateSection.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-        if uri is not None and not re.search(r'^\/akn\/ie\/debateRecord\/dail\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/(debate|writtens)\/dbsect_[0-9]+$', uri):  # noqa: E501
-            raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/akn\/ie\/debateRecord\/dail\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/(debate|writtens)\/dbsect_[0-9]+$/`")  # noqa: E501
-
         self._uri = uri
 
     @property
@@ -148,9 +135,6 @@ class InlineResponse2001QuestionDebateSection(object):
         :param formats: The formats of this InlineResponse2001QuestionDebateSection.  # noqa: E501
         :type: InlineResponse2001QuestionDebateSectionFormats
         """
-        if formats is None:
-            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
-
         self._formats = formats
 
     def to_dict(self):

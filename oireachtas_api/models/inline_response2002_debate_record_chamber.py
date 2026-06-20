@@ -67,9 +67,6 @@ class InlineResponse2002DebateRecordChamber(object):
         :param show_as: The show_as of this InlineResponse2002DebateRecordChamber.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -90,15 +87,6 @@ class InlineResponse2002DebateRecordChamber(object):
         :param uri: The uri of this InlineResponse2002DebateRecordChamber.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-        allowed_values = ["/ie/oireachtas/house/dail", "/ie/oireachtas/house/seanad", "/ie/oireachtas/committee"]  # noqa: E501
-        # if uri not in allowed_values:
-        # raise ValueError(
-        # "Invalid value for `uri` ({0}), must be one of {1}"  # noqa: E501
-        # .format(uri, allowed_values)
-        # )
-
         self._uri = uri
 
     def to_dict(self):

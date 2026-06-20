@@ -67,9 +67,6 @@ class InlineResponse200BillOriginHouse(object):
         :param show_as: The show_as of this InlineResponse200BillOriginHouse.  # noqa: E501
         :type: str
         """
-        if show_as is None:
-            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
-
         self._show_as = show_as
 
     @property
@@ -90,9 +87,6 @@ class InlineResponse200BillOriginHouse(object):
         :param uri: The uri of this InlineResponse200BillOriginHouse.  # noqa: E501
         :type: str
         """
-        if uri is None:
-            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
-
         self._uri = uri
 
     def to_dict(self):

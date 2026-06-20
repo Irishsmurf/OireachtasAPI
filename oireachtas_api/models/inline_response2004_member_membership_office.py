@@ -69,7 +69,6 @@ class InlineResponse2004MemberMembershipOffice(object):
         :param office_name: The office_name of this InlineResponse2004MemberMembershipOffice.  # noqa: E501
         :type: InlineResponse2004MemberMembershipOfficeOfficeName
         """
-
         self._office_name = office_name
 
     @property
@@ -90,7 +89,6 @@ class InlineResponse2004MemberMembershipOffice(object):
         :param date_range: The date_range of this InlineResponse2004MemberMembershipOffice.  # noqa: E501
         :type: InlineResponse2004MemberMembershipOfficeDateRange
         """
-
         self._date_range = date_range
 
     def to_dict(self):

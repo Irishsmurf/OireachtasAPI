@@ -63,9 +63,6 @@ class InlineResponse200BillVersions(object):
         :param version: The version of this InlineResponse200BillVersions.  # noqa: E501
         :type: InlineResponse200BillVersion
         """
-        if version is None:
-            pass # raise ValueError("Invalid value for `version`, must not be `None`")  # noqa: E501
-
         self._version = version
 
     def to_dict(self):
