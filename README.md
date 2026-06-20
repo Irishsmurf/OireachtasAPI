@@ -1,7 +1,7 @@
 # Houses of the Oireachtas Open Data API - Python SDK
 
 [![Build Status](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml/badge.svg)](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml)
-[![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](#)
+[![Version](https://img.shields.io/badge/version-2.1.0-blue.svg)](#)
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](#)
 [![Documentation](https://img.shields.io/badge/docs-MkDocs-green.svg)](https://irishsmurf.github.io/OireachtasAPI/)
 
