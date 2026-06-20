@@ -1,41 +1,46 @@
-# oireachtas-api
+# Houses of the Oireachtas Open Data API - Python SDK
 
-[![CI](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml/badge.svg)](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml)
+[![Build Status](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml/badge.svg)](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml)
+[![Version](https://img.shields.io/badge/version-2.0.0-blue.svg)](#)
+[![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](#)
 
-Houses of the Oireachtas Open Data APIs Python SDK.
+A modern, lightweight Python client SDK for retrieving and querying open parliament data from the national parliament of Ireland (Houses of the Oireachtas).
 
-The Houses of the Oireachtas provides these APIs to allow parliamentary datasets to be retrieved and reused as widely as possible. They are intended to be used in conjunction with [data.oireachtas.ie](https://data.oireachtas.ie), from where datasets can be accessed directly. By using the APIs, users can make metadata queries to identify the specific data they require. New data are available through the API as soon as they are published.
-
-For more information, please visit [beta.oireachtas.ie/en/open-data](https://beta.oireachtas.ie/en/open-data).
-
-- **API version:** 1.0
-- **Package version:** 2.0.0
+This client SDK makes metadata queries easy, allowing you to discover and locate specific official documents, bills, members, votes (divisions), and debates. Output formats point directly to XML/PDF datasets hosted at [data.oireachtas.ie](https://data.oireachtas.ie).
 
 ---
 
-## Requirements
+## 🚀 Key Features
 
-- Python 3.8+
+* **Modern Python 3 Support:** Fully compatible with Python 3.8+ (legacy Python 2 support has been dropped).
+* **Fully Tested:** Upgraded to use `pytest` with a complete suite of unit (mocked) and integration (live API) tests.
+* **Open Access:** Works out of the box with the public Oireachtas API endpoints (no authentication tokens required).
+* **Automated CI/CD:** GitHub Actions verify compatibility on every push and automatically build & publish new GitHub Releases when tags are created.
 
-## Installation & Usage
+---
 
-### Installing from GitHub
+## 🛠 Installation
 
-You can install this package directly from GitHub:
+### Installing directly from GitHub
 
-```sh
+To install the latest release directly from GitHub:
+```bash
 pip install git+https://github.com/Irishsmurf/OireachtasAPI.git
 ```
 
-### Local Development Installation
+### Local Development Setup
 
-Clone the repository and install it in editable mode:
-
-```sh
+To clone the repository and install it in editable mode with development dependencies:
+```bash
+# Clone the repository
 git clone https://github.com/Irishsmurf/OireachtasAPI.git
 cd OireachtasAPI
+
+# Create and activate a virtual environment
 python3 -m venv .venv
 source .venv/bin/activate
+
+# Install requirements
 pip install --upgrade pip setuptools wheel
 pip install -r requirements.txt -r test-requirements.txt
 pip install -e .
@@ -43,90 +48,85 @@ pip install -e .
 
 ---
 
-## Running Tests
+## 💡 Quick Start Example
 
-We use `pytest` for running our test suite.
-
-### Run Unit Tests (Mocked API calls)
-
-To run tests without making actual network requests to the live Oireachtas API:
-
-```sh
-pytest -m "not integration"
-```
-
-### Run Integration Tests (Real API calls)
-
-To run the integration tests targeting the live Oireachtas API endpoints:
-
-```sh
-pytest -m "integration"
-```
-
-### Run All Tests
-
-To run the entire test suite:
-
-```sh
-pytest
-```
-
----
-
-## Getting Started
-
-Follow the installation instructions and run the following example script:
+This code demonstrates how to retrieve the 5 most recent active Constituencies:
 
 ```python
 import oireachtas_api
 from pprint import pprint
 
-# Create an instance of the API class
-api_instance = oireachtas_api.ConstituenciesApi()
+# 1. Initialize the client
+client = oireachtas_api.ConstituenciesApi()
 
 try:
-    # Fetch list of Constituencies (limit to 5 results)
-    api_response = api_instance.constituencies(limit=5)
-    pprint(api_response)
+    # 2. Query constituencies (limiting to 5 results)
+    response = client.constituencies(limit=5)
+    
+    # 3. Print the API response
+    print("--- Oireachtas Constituencies ---")
+    pprint(response)
 except oireachtas_api.rest.ApiException as e:
-    print("Exception when calling ConstituenciesApi->constituencies: %s\n" % e)
+    print(f"Failed to query constituencies: {e}")
 ```
 
 ---
 
-## Documentation for API Endpoints
+## 📂 Core API Reference
 
-All URIs are relative to *https://api.oireachtas.ie/v1*
+All requests call the live API endpoint: `https://api.oireachtas.ie/v1`.
 
-Class | Method | HTTP request | Description
------------- | ------------- | ------------- | -------------
-*ConstituenciesApi* | [**constituencies**](docs/ConstituenciesApi.md#constituencies) | **GET** /constituencies | Constituencies List
-*DebatesApi* | [**debates**](docs/DebatesApi.md#debates) | **GET** /debates | Debates List
-*DivisionsApi* | [**divisions**](docs/DivisionsApi.md#divisions) | **GET** /divisions | Divisions
-*FiltersApi* | [**members**](docs/FiltersApi.md#members) | **GET** /members | Members
-*HousesApi* | [**houses**](docs/HousesApi.md#houses) | **GET** /houses | Houses
-*LegislationApi* | [**legislation**](docs/LegislationApi.md#legislation) | **GET** /legislation | Legislation API
-*MembersApi* | [**members**](docs/MembersApi.md#members) | **GET** /members | Members
-*PartiesApi* | [**parties**](docs/PartiesApi.md#parties) | **GET** /parties | Parties List
-*QuestionsApi* | [**questions**](docs/QuestionsApi.md#questions) | **GET** /questions | Questions Filtered by Type Only
+| Service Class | Method API | Description / Use Case | Official Specs |
+| :--- | :--- | :--- | :--- |
+| **`ConstituenciesApi`** | `constituencies()` | Retrieve electoral districts | [Docs](docs/ConstituenciesApi.md) |
+| **`DebatesApi`** | `debates()` | Access official debates transcripts | [Docs](docs/DebatesApi.md) |
+| **`DivisionsApi`** | `divisions()` | Inspect parliamentary votes and counts | [Docs](docs/DivisionsApi.md) |
+| **`HousesApi`** | `houses()` | Query house info (Dáil or Seanad) | [Docs](docs/HousesApi.md) |
+| **`LegislationApi`** | `legislation()` | Query active & historic bills and acts | [Docs](docs/LegislationApi.md) |
+| **`MembersApi`** | `members()` | Look up details of TDs and Senators | [Docs](docs/MembersApi.md) |
+| **`PartiesApi`** | `parties()` | List political parties | [Docs](docs/PartiesApi.md) |
+| **`QuestionsApi`** | `questions()` | Query parliamentary questions (PQs) | [Docs](docs/QuestionsApi.md) |
 
 ---
 
-## Releases and Version Tracking
+## 🧪 Testing Guide
 
-This repository utilizes GitHub Actions to automate release tracking.
+We use `pytest` for unit and integration tests.
 
-1. Updates are committed to the `master` / `main` branch.
-2. When ready for a release, draft a tag matching `v*` (e.g. `v2.0.0`):
-   ```sh
+### 1. Isolated Unit Tests (Mocked Network)
+To run local test stubs using mock API responses (extremely fast, offline-safe):
+```bash
+pytest -m "not integration"
+```
+
+### 2. Live Integration Tests
+To verify compatibility against the real, live Oireachtas API endpoints:
+```bash
+pytest -m "integration"
+```
+
+### 3. Run the Whole Test Suite
+To run all tests:
+```bash
+pytest
+```
+
+---
+
+## 🏷 Release Automation
+
+This project tracks official releases automatically:
+1. Ensure your version code is up to date in [setup.py](setup.py).
+2. Commit your changes and tag the master branch:
+   ```bash
    git tag v2.0.0
    git push origin v2.0.0
    ```
-3. The **Release Workflow** automatically:
-   - Builds Python `wheel` and source distribution packages.
-   - Generates release changelog notes.
-   - Publishes a new GitHub Release with the build artifacts attached.
+3. The **Release Workflow** will automatically build the package wheels and publish a drafted GitHub Release with build assets attached.
 
-## Author
+---
 
-open.data@oireachtas.ie
+## 📬 Contact & Support
+
+* **Official API Portal:** [beta.oireachtas.ie/en/open-data](https://beta.oireachtas.ie/en/open-data)
+* **Email:** open.data@oireachtas.ie
