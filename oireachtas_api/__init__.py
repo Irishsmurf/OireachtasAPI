@@ -28,6 +28,8 @@ from oireachtas_api.api.questions_api import QuestionsApi
 # import ApiClient
 from oireachtas_api.api_client import ApiClient
 from oireachtas_api.configuration import Configuration
+from oireachtas_api.client import Client
+from oireachtas_api.rest import ApiException
 # import models into sdk package
 from oireachtas_api.models.error_response import ErrorResponse
 from oireachtas_api.models.inline_response200 import InlineResponse200
