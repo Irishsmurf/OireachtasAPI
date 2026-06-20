@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003DivisionTallies(object):
@@ -74,7 +73,7 @@ class InlineResponse2003DivisionTallies(object):
         :type: Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally
         """
         if nil_votes is None:
-            raise ValueError("Invalid value for `nil_votes`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `nil_votes`, must not be `None`")  # noqa: E501
 
         self._nil_votes = nil_votes
 
@@ -97,7 +96,7 @@ class InlineResponse2003DivisionTallies(object):
         :type: Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally
         """
         if ta_votes is None:
-            raise ValueError("Invalid value for `ta_votes`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `ta_votes`, must not be `None`")  # noqa: E501
 
         self._ta_votes = ta_votes
 
@@ -126,7 +125,7 @@ class InlineResponse2003DivisionTallies(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

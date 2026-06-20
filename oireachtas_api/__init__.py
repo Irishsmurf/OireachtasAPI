@@ -13,7 +13,6 @@
 """
 
 
-from __future__ import absolute_import
 
 # import apis into sdk package
 from oireachtas_api.api.constituencies_api import ConstituenciesApi

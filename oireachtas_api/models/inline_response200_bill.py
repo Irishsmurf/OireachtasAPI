@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse200Bill(object):
@@ -149,7 +148,7 @@ class InlineResponse200Bill(object):
         :type: list[Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsdebate]
         """
         if debates is None:
-            raise ValueError("Invalid value for `debates`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debates`, must not be `None`")  # noqa: E501
 
         self._debates = debates
 
@@ -172,7 +171,7 @@ class InlineResponse200Bill(object):
         :type: list[Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionssponsor]
         """
         if sponsors is None:
-            raise ValueError("Invalid value for `sponsors`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `sponsors`, must not be `None`")  # noqa: E501
 
         self._sponsors = sponsors
 
@@ -195,7 +194,7 @@ class InlineResponse200Bill(object):
         :type: datetime
         """
         if last_updated is None:
-            raise ValueError("Invalid value for `last_updated`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `last_updated`, must not be `None`")  # noqa: E501
 
         self._last_updated = last_updated
 
@@ -218,7 +217,7 @@ class InlineResponse200Bill(object):
         :type: object
         """
         if long_title_en is None:
-            raise ValueError("Invalid value for `long_title_en`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `long_title_en`, must not be `None`")  # noqa: E501
 
         self._long_title_en = long_title_en
 
@@ -241,7 +240,7 @@ class InlineResponse200Bill(object):
         :type: object
         """
         if long_title_ga is None:
-            raise ValueError("Invalid value for `long_title_ga`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `long_title_ga`, must not be `None`")  # noqa: E501
 
         self._long_title_ga = long_title_ga
 
@@ -264,7 +263,7 @@ class InlineResponse200Bill(object):
         :type: InlineResponse200BillOriginHouse
         """
         if origin_house is None:
-            raise ValueError("Invalid value for `origin_house`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `origin_house`, must not be `None`")  # noqa: E501
 
         self._origin_house = origin_house
 
@@ -287,7 +286,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if short_title_en is None:
-            raise ValueError("Invalid value for `short_title_en`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `short_title_en`, must not be `None`")  # noqa: E501
 
         self._short_title_en = short_title_en
 
@@ -310,7 +309,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if short_title_ga is None:
-            raise ValueError("Invalid value for `short_title_ga`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `short_title_ga`, must not be `None`")  # noqa: E501
 
         self._short_title_ga = short_title_ga
 
@@ -333,13 +332,13 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if status is None:
-            raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `status`, must not be `None`")  # noqa: E501
         allowed_values = ["Defeated", "Enacted", "Lapsed", "Current", "Withdrawn", "Rejected"]  # noqa: E501
-        if status not in allowed_values:
-            raise ValueError(
-                "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
-                .format(status, allowed_values)
-            )
+        # if status not in allowed_values:
+        # raise ValueError(
+        # "Invalid value for `status` ({0}), must be one of {1}"  # noqa: E501
+        # .format(status, allowed_values)
+        # )
 
         self._status = status
 
@@ -362,13 +361,13 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if bill_type is None:
-            raise ValueError("Invalid value for `bill_type`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `bill_type`, must not be `None`")  # noqa: E501
         allowed_values = ["Public", "Private", "Hybrid"]  # noqa: E501
-        if bill_type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `bill_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(bill_type, allowed_values)
-            )
+        # if bill_type not in allowed_values:
+        # raise ValueError(
+        # "Invalid value for `bill_type` ({0}), must be one of {1}"  # noqa: E501
+        # .format(bill_type, allowed_values)
+        # )
 
         self._bill_type = bill_type
 
@@ -391,7 +390,7 @@ class InlineResponse200Bill(object):
         :type: list[object]
         """
         if events is None:
-            raise ValueError("Invalid value for `events`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `events`, must not be `None`")  # noqa: E501
 
         self._events = events
 
@@ -414,7 +413,7 @@ class InlineResponse200Bill(object):
         :type: object
         """
         if most_recent_stage is None:
-            raise ValueError("Invalid value for `most_recent_stage`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `most_recent_stage`, must not be `None`")  # noqa: E501
 
         self._most_recent_stage = most_recent_stage
 
@@ -437,7 +436,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
 
         self._uri = uri
 
@@ -460,7 +459,7 @@ class InlineResponse200Bill(object):
         :type: Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsAct
         """
         if act is None:
-            raise ValueError("Invalid value for `act`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `act`, must not be `None`")  # noqa: E501
 
         self._act = act
 
@@ -483,7 +482,7 @@ class InlineResponse200Bill(object):
         :type: list[InlineResponse200BillAmendmentLists]
         """
         if amendment_lists is None:
-            raise ValueError("Invalid value for `amendment_lists`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `amendment_lists`, must not be `None`")  # noqa: E501
 
         self._amendment_lists = amendment_lists
 
@@ -506,7 +505,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if bill_year is None:
-            raise ValueError("Invalid value for `bill_year`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `bill_year`, must not be `None`")  # noqa: E501
 
         self._bill_year = bill_year
 
@@ -529,7 +528,7 @@ class InlineResponse200Bill(object):
         :type: list[object]
         """
         if related_docs is None:
-            raise ValueError("Invalid value for `related_docs`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `related_docs`, must not be `None`")  # noqa: E501
 
         self._related_docs = related_docs
 
@@ -552,7 +551,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if bill_no is None:
-            raise ValueError("Invalid value for `bill_no`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `bill_no`, must not be `None`")  # noqa: E501
 
         self._bill_no = bill_no
 
@@ -575,7 +574,7 @@ class InlineResponse200Bill(object):
         :type: list[InlineResponse200BillStages]
         """
         if stages is None:
-            raise ValueError("Invalid value for `stages`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `stages`, must not be `None`")  # noqa: E501
 
         self._stages = stages
 
@@ -598,7 +597,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if method is None:
-            raise ValueError("Invalid value for `method`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `method`, must not be `None`")  # noqa: E501
 
         self._method = method
 
@@ -621,7 +620,7 @@ class InlineResponse200Bill(object):
         :type: str
         """
         if source is None:
-            raise ValueError("Invalid value for `source`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `source`, must not be `None`")  # noqa: E501
 
         self._source = source
 
@@ -644,7 +643,7 @@ class InlineResponse200Bill(object):
         :type: list[InlineResponse200BillVersions]
         """
         if versions is None:
-            raise ValueError("Invalid value for `versions`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `versions`, must not be `None`")  # noqa: E501
 
         self._versions = versions
 
@@ -652,7 +651,7 @@ class InlineResponse200Bill(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

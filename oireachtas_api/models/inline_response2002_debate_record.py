@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecord(object):
@@ -93,7 +92,7 @@ class InlineResponse2002DebateRecord(object):
         :type: datetime
         """
         if last_updated is None:
-            raise ValueError("Invalid value for `last_updated`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `last_updated`, must not be `None`")  # noqa: E501
 
         self._last_updated = last_updated
 
@@ -116,7 +115,7 @@ class InlineResponse2002DebateRecord(object):
         :type: InlineResponse2002DebateRecordChamber
         """
         if chamber is None:
-            raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
 
         self._chamber = chamber
 
@@ -139,7 +138,7 @@ class InlineResponse2002DebateRecord(object):
         :type: InlineResponse2002DebateRecordHouse
         """
         if house is None:
-            raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
 
         self._house = house
 
@@ -162,7 +161,7 @@ class InlineResponse2002DebateRecord(object):
         :type: InlineResponse2002DebateRecordCounts
         """
         if counts is None:
-            raise ValueError("Invalid value for `counts`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `counts`, must not be `None`")  # noqa: E501
 
         self._counts = counts
 
@@ -185,7 +184,7 @@ class InlineResponse2002DebateRecord(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
 
         self._uri = uri
 
@@ -208,7 +207,7 @@ class InlineResponse2002DebateRecord(object):
         :type: Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateFormats
         """
         if formats is None:
-            raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
 
         self._formats = formats
 
@@ -231,7 +230,7 @@ class InlineResponse2002DebateRecord(object):
         :type: list[InlineResponse2002DebateRecordDebateSections]
         """
         if debate_sections is None:
-            raise ValueError("Invalid value for `debate_sections`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debate_sections`, must not be `None`")  # noqa: E501
 
         self._debate_sections = debate_sections
 
@@ -254,7 +253,7 @@ class InlineResponse2002DebateRecord(object):
         :type: str
         """
         if _date is None:
-            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
 
         self.__date = _date
 
@@ -262,7 +261,7 @@ class InlineResponse2002DebateRecord(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

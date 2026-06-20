@@ -11,7 +11,6 @@
 """
 
 
-from __future__ import absolute_import
 
 import io
 import json
@@ -21,8 +20,7 @@ import ssl
 
 import certifi
 # python 2 and python 3 compatibility library
-import six
-from six.moves.urllib.parse import urlencode
+from urllib.parse import urlencode
 
 try:
     import urllib3
@@ -140,7 +138,7 @@ class RESTClientObject(object):
 
         timeout = None
         if _request_timeout:
-            if isinstance(_request_timeout, (int, ) if six.PY3 else (int, long)):  # noqa: E501,F821
+            if isinstance(_request_timeout, (int, float)):  # noqa: E501,F821
                 timeout = urllib3.Timeout(total=_request_timeout)
             elif (isinstance(_request_timeout, tuple) and
                   len(_request_timeout) == 2):
@@ -218,8 +216,7 @@ class RESTClientObject(object):
 
             # In the python 3, the response.data is bytes.
             # we need to decode it to string.
-            if six.PY3:
-                r.data = r.data.decode('utf8')
+            r.data = r.data.decode('utf8')
 
             # log response body
             logger.debug("response body: %s", r.data)

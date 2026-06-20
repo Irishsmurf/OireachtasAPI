@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2001Results(object):
@@ -65,7 +64,7 @@ class InlineResponse2001Results(object):
         :type: InlineResponse2001Question
         """
         if question is None:
-            raise ValueError("Invalid value for `question`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `question`, must not be `None`")  # noqa: E501
 
         self._question = question
 
@@ -73,7 +72,7 @@ class InlineResponse2001Results(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

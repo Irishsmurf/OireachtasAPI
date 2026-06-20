@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2001Question(object):
@@ -98,7 +97,7 @@ class InlineResponse2001Question(object):
         :type: int
         """
         if question_number is None:
-            raise ValueError("Invalid value for `question_number`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `question_number`, must not be `None`")  # noqa: E501
 
         self._question_number = question_number
 
@@ -121,7 +120,7 @@ class InlineResponse2001Question(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
         if uri is not None and not re.search(r'^\/ie\/oireachtas\/question\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/pq_[0-9]+$', uri):  # noqa: E501
             raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/ie\/oireachtas\/question\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/pq_[0-9]+$/`")  # noqa: E501
 
@@ -146,13 +145,13 @@ class InlineResponse2001Question(object):
         :type: str
         """
         if question_type is None:
-            raise ValueError("Invalid value for `question_type`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `question_type`, must not be `None`")  # noqa: E501
         allowed_values = ["oral", "written"]  # noqa: E501
-        if question_type not in allowed_values:
-            raise ValueError(
-                "Invalid value for `question_type` ({0}), must be one of {1}"  # noqa: E501
-                .format(question_type, allowed_values)
-            )
+        # if question_type not in allowed_values:
+        # raise ValueError(
+        # "Invalid value for `question_type` ({0}), must be one of {1}"  # noqa: E501
+        # .format(question_type, allowed_values)
+        # )
 
         self._question_type = question_type
 
@@ -175,7 +174,7 @@ class InlineResponse2001Question(object):
         :type: InlineResponse2001QuestionBy
         """
         if by is None:
-            raise ValueError("Invalid value for `by`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `by`, must not be `None`")  # noqa: E501
 
         self._by = by
 
@@ -198,7 +197,7 @@ class InlineResponse2001Question(object):
         :type: str
         """
         if _date is None:
-            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
 
         self.__date = _date
 
@@ -221,7 +220,7 @@ class InlineResponse2001Question(object):
         :type: InlineResponse2001QuestionDebateSection
         """
         if debate_section is None:
-            raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
 
         self._debate_section = debate_section
 
@@ -244,7 +243,7 @@ class InlineResponse2001Question(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -288,7 +287,7 @@ class InlineResponse2001Question(object):
         :type: InlineResponse2001QuestionTo
         """
         if to is None:
-            raise ValueError("Invalid value for `to`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `to`, must not be `None`")  # noqa: E501
 
         self._to = to
 
@@ -296,7 +295,7 @@ class InlineResponse2001Question(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

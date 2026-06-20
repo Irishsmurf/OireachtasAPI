@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2001QuestionTo(object):
@@ -77,7 +76,7 @@ class InlineResponse2001QuestionTo(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -100,7 +99,7 @@ class InlineResponse2001QuestionTo(object):
         :type: object
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
 
         self._uri = uri
 
@@ -123,7 +122,7 @@ class InlineResponse2001QuestionTo(object):
         :type: object
         """
         if role_type is None:
-            raise ValueError("Invalid value for `role_type`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `role_type`, must not be `None`")  # noqa: E501
 
         self._role_type = role_type
 
@@ -146,7 +145,7 @@ class InlineResponse2001QuestionTo(object):
         :type: object
         """
         if role_code is None:
-            raise ValueError("Invalid value for `role_code`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `role_code`, must not be `None`")  # noqa: E501
 
         self._role_code = role_code
 
@@ -154,7 +153,7 @@ class InlineResponse2001QuestionTo(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

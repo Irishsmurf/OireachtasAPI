@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2002DebateRecordChamber(object):
@@ -69,7 +68,7 @@ class InlineResponse2002DebateRecordChamber(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -92,13 +91,13 @@ class InlineResponse2002DebateRecordChamber(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
         allowed_values = ["/ie/oireachtas/house/dail", "/ie/oireachtas/house/seanad", "/ie/oireachtas/committee"]  # noqa: E501
-        if uri not in allowed_values:
-            raise ValueError(
-                "Invalid value for `uri` ({0}), must be one of {1}"  # noqa: E501
-                .format(uri, allowed_values)
-            )
+        # if uri not in allowed_values:
+        # raise ValueError(
+        # "Invalid value for `uri` ({0}), must be one of {1}"  # noqa: E501
+        # .format(uri, allowed_values)
+        # )
 
         self._uri = uri
 
@@ -106,7 +105,7 @@ class InlineResponse2002DebateRecordChamber(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2001QuestionDebateSection(object):
@@ -77,7 +76,7 @@ class InlineResponse2001QuestionDebateSection(object):
         :type: str
         """
         if debate_section_id is None:
-            raise ValueError("Invalid value for `debate_section_id`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debate_section_id`, must not be `None`")  # noqa: E501
         if debate_section_id is not None and not re.search(r'^dbsect_[0-9]+$', debate_section_id):  # noqa: E501
             raise ValueError(r"Invalid value for `debate_section_id`, must be a follow pattern or equal to `/^dbsect_[0-9]+$/`")  # noqa: E501
 
@@ -102,7 +101,7 @@ class InlineResponse2001QuestionDebateSection(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -125,7 +124,7 @@ class InlineResponse2001QuestionDebateSection(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
         if uri is not None and not re.search(r'^\/akn\/ie\/debateRecord\/dail\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/(debate|writtens)\/dbsect_[0-9]+$', uri):  # noqa: E501
             raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/akn\/ie\/debateRecord\/dail\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/(debate|writtens)\/dbsect_[0-9]+$/`")  # noqa: E501
 
@@ -150,7 +149,7 @@ class InlineResponse2001QuestionDebateSection(object):
         :type: InlineResponse2001QuestionDebateSectionFormats
         """
         if formats is None:
-            raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
 
         self._formats = formats
 
@@ -158,7 +157,7 @@ class InlineResponse2001QuestionDebateSection(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

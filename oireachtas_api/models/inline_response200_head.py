@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse200Head(object):
@@ -118,11 +117,11 @@ class InlineResponse200Head(object):
         :type: str
         """
         allowed_values = ["en", "ga", "mul"]  # noqa: E501
-        if lang not in allowed_values:
-            raise ValueError(
-                "Invalid value for `lang` ({0}), must be one of {1}"  # noqa: E501
-                .format(lang, allowed_values)
-            )
+        # if lang not in allowed_values:
+        # raise ValueError(
+        # "Invalid value for `lang` ({0}), must be one of {1}"  # noqa: E501
+        # .format(lang, allowed_values)
+        # )
 
         self._lang = lang
 
@@ -130,7 +129,7 @@ class InlineResponse200Head(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

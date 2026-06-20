@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003DivisionHouse(object):
@@ -85,7 +84,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
 
         self._uri = uri
 
@@ -108,7 +107,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if house_no is None:
-            raise ValueError("Invalid value for `house_no`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `house_no`, must not be `None`")  # noqa: E501
 
         self._house_no = house_no
 
@@ -131,7 +130,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if house_code is None:
-            raise ValueError("Invalid value for `house_code`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `house_code`, must not be `None`")  # noqa: E501
 
         self._house_code = house_code
 
@@ -154,7 +153,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if chamber_type is None:
-            raise ValueError("Invalid value for `chamber_type`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `chamber_type`, must not be `None`")  # noqa: E501
 
         self._chamber_type = chamber_type
 
@@ -177,7 +176,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -200,7 +199,7 @@ class InlineResponse2003DivisionHouse(object):
         :type: str
         """
         if committee_code is None:
-            raise ValueError("Invalid value for `committee_code`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `committee_code`, must not be `None`")  # noqa: E501
 
         self._committee_code = committee_code
 
@@ -208,7 +207,7 @@ class InlineResponse2003DivisionHouse(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

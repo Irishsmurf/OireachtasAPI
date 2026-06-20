@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003DivisionDebate(object):
@@ -77,7 +76,7 @@ class InlineResponse2003DivisionDebate(object):
         :type: str
         """
         if show_as is None:
-            raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `show_as`, must not be `None`")  # noqa: E501
 
         self._show_as = show_as
 
@@ -100,7 +99,7 @@ class InlineResponse2003DivisionDebate(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
         if uri is not None and not re.search(r'^\/akn\/ie\/debateRecord\/[a-záéíóú_,-]+\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/debate\/main$', uri):  # noqa: E501
             raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/akn\/ie\/debateRecord\/[a-záéíóú_,-]+\/[0-9]{4}-[0-9]{2}-[0-9]{2}\/debate\/main$/`")  # noqa: E501
 
@@ -125,7 +124,7 @@ class InlineResponse2003DivisionDebate(object):
         :type: InlineResponse2001QuestionDebateSectionFormats
         """
         if formats is None:
-            raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `formats`, must not be `None`")  # noqa: E501
 
         self._formats = formats
 
@@ -148,7 +147,7 @@ class InlineResponse2003DivisionDebate(object):
         :type: str
         """
         if debate_section is None:
-            raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debate_section`, must not be `None`")  # noqa: E501
 
         self._debate_section = debate_section
 
@@ -156,7 +155,7 @@ class InlineResponse2003DivisionDebate(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

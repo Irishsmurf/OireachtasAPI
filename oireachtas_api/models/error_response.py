@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class ErrorResponse(object):
@@ -65,7 +64,7 @@ class ErrorResponse(object):
         :type: str
         """
         if message is None:
-            raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `message`, must not be `None`")  # noqa: E501
 
         self._message = message
 
@@ -73,7 +72,7 @@ class ErrorResponse(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(

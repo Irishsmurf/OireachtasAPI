@@ -14,7 +14,6 @@
 import pprint
 import re  # noqa: F401
 
-import six
 
 
 class InlineResponse2003Division(object):
@@ -113,7 +112,7 @@ class InlineResponse2003Division(object):
         :type: bool
         """
         if is_bill is None:
-            raise ValueError("Invalid value for `is_bill`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `is_bill`, must not be `None`")  # noqa: E501
 
         self._is_bill = is_bill
 
@@ -136,7 +135,7 @@ class InlineResponse2003Division(object):
         :type: InlineResponse2003DivisionDebate
         """
         if debate is None:
-            raise ValueError("Invalid value for `debate`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `debate`, must not be `None`")  # noqa: E501
 
         self._debate = debate
 
@@ -159,7 +158,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if vote_id is None:
-            raise ValueError("Invalid value for `vote_id`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `vote_id`, must not be `None`")  # noqa: E501
 
         self._vote_id = vote_id
 
@@ -182,7 +181,7 @@ class InlineResponse2003Division(object):
         :type: object
         """
         if _datetime is None:
-            raise ValueError("Invalid value for `_datetime`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `_datetime`, must not be `None`")  # noqa: E501
 
         self.__datetime = _datetime
 
@@ -205,7 +204,7 @@ class InlineResponse2003Division(object):
         :type: InlineResponse2003DivisionTallies
         """
         if tallies is None:
-            raise ValueError("Invalid value for `tallies`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `tallies`, must not be `None`")  # noqa: E501
 
         self._tallies = tallies
 
@@ -228,7 +227,7 @@ class InlineResponse2003Division(object):
         :type: InlineResponse200BillOriginHouse
         """
         if chamber is None:
-            raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `chamber`, must not be `None`")  # noqa: E501
 
         self._chamber = chamber
 
@@ -251,7 +250,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if category is None:
-            raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `category`, must not be `None`")  # noqa: E501
 
         self._category = category
 
@@ -274,7 +273,7 @@ class InlineResponse2003Division(object):
         :type: InlineResponse2003DivisionSubject
         """
         if subject is None:
-            raise ValueError("Invalid value for `subject`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `subject`, must not be `None`")  # noqa: E501
 
         self._subject = subject
 
@@ -297,7 +296,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if uri is None:
-            raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `uri`, must not be `None`")  # noqa: E501
         if uri is not None and not re.search(r'^\/ie\/oireachtas\/division\/(house|committee)\/(seanad|dail)\/[0-9]+\/', uri):  # noqa: E501
             raise ValueError(r"Invalid value for `uri`, must be a follow pattern or equal to `/^\/ie\/oireachtas\/division\/(house|committee)\/(seanad|dail)\/[0-9]+\//`")  # noqa: E501
 
@@ -322,7 +321,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if outcome is None:
-            raise ValueError("Invalid value for `outcome`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `outcome`, must not be `None`")  # noqa: E501
 
         self._outcome = outcome
 
@@ -345,7 +344,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if tellers is None:
-            raise ValueError("Invalid value for `tellers`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `tellers`, must not be `None`")  # noqa: E501
 
         self._tellers = tellers
 
@@ -368,7 +367,7 @@ class InlineResponse2003Division(object):
         :type: InlineResponse2003DivisionHouse
         """
         if house is None:
-            raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `house`, must not be `None`")  # noqa: E501
 
         self._house = house
 
@@ -391,7 +390,7 @@ class InlineResponse2003Division(object):
         :type: str
         """
         if _date is None:
-            raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
+            pass # raise ValueError("Invalid value for `_date`, must not be `None`")  # noqa: E501
         if _date is not None and not re.search(r'^[0-9]{4}-[0-9]{2}-[0-9]{2}$', _date):  # noqa: E501
             raise ValueError(r"Invalid value for `_date`, must be a follow pattern or equal to `/^[0-9]{4}-[0-9]{2}-[0-9]{2}$/`")  # noqa: E501
 
@@ -401,7 +400,7 @@ class InlineResponse2003Division(object):
         """Returns the model properties as a dict"""
         result = {}
 
-        for attr, _ in six.iteritems(self.swagger_types):
+        for attr, _ in self.swagger_types.items():
             value = getattr(self, attr)
             if isinstance(value, list):
                 result[attr] = list(map(
