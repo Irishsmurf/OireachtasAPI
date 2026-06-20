@@ -3,8 +3,11 @@
 [![Build Status](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml/badge.svg)](https://github.com/Irishsmurf/OireachtasAPI/actions/workflows/ci.yml)
 [![Version](https://img.shields.io/badge/version-2.0.1-blue.svg)](#)
 [![Python Version](https://img.shields.io/badge/python-3.8%20%7C%203.9%20%7C%203.10%20%7C%203.11%20%7C%203.12-blue.svg)](#)
+[![Documentation](https://img.shields.io/badge/docs-MkDocs-green.svg)](https://irishsmurf.github.io/OireachtasAPI/)
 
 A modern, lightweight Python client SDK for retrieving and querying open parliament data from the national parliament of Ireland (Houses of the Oireachtas).
+
+📖 **Full Documentation:** The comprehensive interactive documentation built with MkDocs is available on GitHub Pages: [https://irishsmurf.github.io/OireachtasAPI/](https://irishsmurf.github.io/OireachtasAPI/)
 
 This client SDK makes metadata queries easy, allowing you to discover and locate specific official documents, bills, members, votes (divisions), and debates. Output formats point directly to XML/PDF datasets hosted at [data.oireachtas.ie](https://data.oireachtas.ie).
 
