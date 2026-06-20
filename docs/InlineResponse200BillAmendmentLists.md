@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**amendment_list** | [**Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsAmendmentList**](Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsAmendmentList.md) |  | [optional] 
+**amendment_list** | **Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsAmendmentList** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

@@ -10,6 +10,6 @@ Name | Type | Description | Notes
 **represents** | [**list[InlineResponse2004MemberMembershipRepresents]**](InlineResponse2004MemberMembershipRepresents.md) |  | [optional] 
 **date_range** | [**InlineResponse2004MemberMembershipPartyDateRange**](InlineResponse2004MemberMembershipPartyDateRange.md) |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

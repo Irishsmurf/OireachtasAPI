@@ -3,7 +3,7 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**text** | [**list[Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateText]**](Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateText.md) |  | [optional] 
+**text** | **list[Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateText]** |  | [optional] 
 **show_as** | **str** |  | 
 **debate_type** | **str** |  | 
 **counts** | [**InlineResponse2002DebateRecordDebateSectionCounts**](InlineResponse2002DebateRecordDebateSectionCounts.md) |  | 
@@ -15,6 +15,6 @@ Name | Type | Description | Notes
 **formats** | [**InlineResponse2001QuestionDebateSectionFormats**](InlineResponse2001QuestionDebateSectionFormats.md) |  | [optional] 
 **parent_debate_section** | **object** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

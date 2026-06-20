@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**speaker** | [**Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateSpeaker**](Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateSpeaker.md) |  | 
+**speaker** | **Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateSpeaker** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

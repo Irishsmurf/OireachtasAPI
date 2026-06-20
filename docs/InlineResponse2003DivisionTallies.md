@@ -3,10 +3,10 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**nil_votes** | [**Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally**](Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally.md) |  | 
-**ta_votes** | [**Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally**](Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally.md) |  | 
+**nil_votes** | **Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally** |  | 
+**ta_votes** | **Paths1divisionsgetresponses200schemapropertiesresultsitemsdefinitionsmemberTally** |  | 
 **staon_votes** | **object** |  | [optional] 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

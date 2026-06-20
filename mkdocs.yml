@@ -1,0 +1,117 @@
+site_name: Oireachtas API Python SDK
+site_url: https://irishsmurf.github.io/OireachtasAPI/
+site_description: A modern, lightweight Python client SDK for querying open parliament data from the national parliament of Ireland (Houses of the Oireachtas).
+site_author: Irishsmurf
+
+repo_name: Irishsmurf/OireachtasAPI
+repo_url: https://github.com/Irishsmurf/OireachtasAPI
+
+theme:
+  name: material
+  palette:
+    # Palette toggle for light/dark mode
+    - media: "(prefers-color-scheme: light)"
+      scheme: default
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-7
+        name: Switch to dark mode
+    - media: "(prefers-color-scheme: dark)"
+      scheme: slate
+      primary: indigo
+      accent: indigo
+      toggle:
+        icon: material/brightness-4
+        name: Switch to light mode
+  features:
+    - navigation.tabs
+    - navigation.sections
+    - navigation.top
+    - search.suggest
+    - search.highlight
+    - content.code.copy
+
+markdown_extensions:
+  - pymdownx.highlight:
+      anchor_linenums: true
+      line_spans: __span
+      pygments_lang_class: true
+  - pymdownx.superfences
+  - pymdownx.inlinehilite
+  - pymdownx.snippets
+  - admonition
+  - pymdownx.details
+  - attr_list
+
+nav:
+  - Home: index.md
+  - API Reference:
+    - Constituencies API: ConstituenciesApi.md
+    - Debates API: DebatesApi.md
+    - Divisions API: DivisionsApi.md
+    - Filters API: FiltersApi.md
+    - Houses API: HousesApi.md
+    - Legislation API: LegislationApi.md
+    - Members API: MembersApi.md
+    - Parties API: PartiesApi.md
+    - Questions API: QuestionsApi.md
+  - Data Models:
+    - Overview & Error:
+      - Error Response: ErrorResponse.md
+      - InlineResponse200: InlineResponse200.md
+      - InlineResponse2001: InlineResponse2001.md
+      - InlineResponse2001Results: InlineResponse2001Results.md
+      - InlineResponse2002: InlineResponse2002.md
+      - InlineResponse2002Results: InlineResponse2002Results.md
+      - InlineResponse2003: InlineResponse2003.md
+      - InlineResponse2003Results: InlineResponse2003Results.md
+      - InlineResponse2004: InlineResponse2004.md
+      - InlineResponse2004Results: InlineResponse2004Results.md
+      - InlineResponse200Head: InlineResponse200Head.md
+      - InlineResponse200HeadDateRange: InlineResponse200HeadDateRange.md
+      - InlineResponse200Results: InlineResponse200Results.md
+    - Bill / Legislation:
+      - InlineResponse200Bill: InlineResponse200Bill.md
+      - InlineResponse200BillAmendmentLists: InlineResponse200BillAmendmentLists.md
+      - InlineResponse200BillOriginHouse: InlineResponse200BillOriginHouse.md
+      - InlineResponse200BillStages: InlineResponse200BillStages.md
+      - InlineResponse200BillVersion: InlineResponse200BillVersion.md
+      - InlineResponse200BillVersions: InlineResponse200BillVersions.md
+    - Debates & Questions:
+      - InlineResponse2001Question: InlineResponse2001Question.md
+      - InlineResponse2001QuestionBy: InlineResponse2001QuestionBy.md
+      - InlineResponse2001QuestionDebateSection: InlineResponse2001QuestionDebateSection.md
+      - InlineResponse2001QuestionDebateSectionFormats: InlineResponse2001QuestionDebateSectionFormats.md
+      - InlineResponse2001QuestionTo: InlineResponse2001QuestionTo.md
+      - InlineResponse2002DebateRecord: InlineResponse2002DebateRecord.md
+      - InlineResponse2002DebateRecordChamber: InlineResponse2002DebateRecordChamber.md
+      - InlineResponse2002DebateRecordCounts: InlineResponse2002DebateRecordCounts.md
+      - InlineResponse2002DebateRecordDebateSection: InlineResponse2002DebateRecordDebateSection.md
+      - InlineResponse2002DebateRecordDebateSectionCounts: InlineResponse2002DebateRecordDebateSectionCounts.md
+      - InlineResponse2002DebateRecordDebateSectionSpeakers: InlineResponse2002DebateRecordDebateSectionSpeakers.md
+      - InlineResponse2002DebateRecordDebateSections: InlineResponse2002DebateRecordDebateSections.md
+      - InlineResponse2002DebateRecordHouse: InlineResponse2002DebateRecordHouse.md
+    - Divisions / Votes:
+      - InlineResponse2003Division: InlineResponse2003Division.md
+      - InlineResponse2003DivisionDebate: InlineResponse2003DivisionDebate.md
+      - InlineResponse2003DivisionHouse: InlineResponse2003DivisionHouse.md
+      - InlineResponse2003DivisionSubject: InlineResponse2003DivisionSubject.md
+      - InlineResponse2003DivisionTallies: InlineResponse2003DivisionTallies.md
+    - Members & Representatives:
+      - InlineResponse2004Head: InlineResponse2004Head.md
+      - InlineResponse2004HeadCounts: InlineResponse2004HeadCounts.md
+      - InlineResponse2004HeadDateRange: InlineResponse2004HeadDateRange.md
+      - InlineResponse2004Member: InlineResponse2004Member.md
+      - InlineResponse2004MemberMembership: InlineResponse2004MemberMembership.md
+      - InlineResponse2004MemberMembershipHouse: InlineResponse2004MemberMembershipHouse.md
+      - InlineResponse2004MemberMembershipOffice: InlineResponse2004MemberMembershipOffice.md
+      - InlineResponse2004MemberMembershipOfficeDateRange: InlineResponse2004MemberMembershipOfficeDateRange.md
+      - InlineResponse2004MemberMembershipOfficeOfficeName: InlineResponse2004MemberMembershipOfficeOfficeName.md
+      - InlineResponse2004MemberMembershipOffices: InlineResponse2004MemberMembershipOffices.md
+      - InlineResponse2004MemberMembershipParties: InlineResponse2004MemberMembershipParties.md
+      - InlineResponse2004MemberMembershipParty: InlineResponse2004MemberMembershipParty.md
+      - InlineResponse2004MemberMembershipPartyDateRange: InlineResponse2004MemberMembershipPartyDateRange.md
+      - InlineResponse2004MemberMembershipRepresent: InlineResponse2004MemberMembershipRepresent.md
+      - InlineResponse2004MemberMembershipRepresents: InlineResponse2004MemberMembershipRepresents.md
+      - InlineResponse2004MemberMemberships: InlineResponse2004MemberMemberships.md

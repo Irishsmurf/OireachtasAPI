@@ -8,10 +8,10 @@ Name | Type | Description | Notes
 **house** | [**InlineResponse2002DebateRecordHouse**](InlineResponse2002DebateRecordHouse.md) |  | 
 **counts** | [**InlineResponse2002DebateRecordCounts**](InlineResponse2002DebateRecordCounts.md) |  | 
 **uri** | **str** |  | 
-**formats** | [**Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateFormats**](Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateFormats.md) |  | 
+**formats** | **Paths1debatesgetresponses200schemapropertiesresultsitemsdefinitionsdebateFormats** |  | 
 **debate_sections** | [**list[InlineResponse2002DebateRecordDebateSections]**](InlineResponse2002DebateRecordDebateSections.md) |  | 
 **_date** | **str** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 

@@ -3,8 +3,8 @@
 ## Properties
 Name | Type | Description | Notes
 ------------ | ------------- | ------------- | -------------
-**event** | [**Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsEvent**](Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsEvent.md) |  | 
+**event** | **Paths1legislationgetresponses200schemapropertiesresultsitemsdefinitionsEvent** |  | 
 
-[[Back to Model list]](../README.md#documentation-for-models) [[Back to API list]](../README.md#documentation-for-api-endpoints) [[Back to README]](../README.md)
+[[Back to Model list]](index.md#documentation-for-models) [[Back to API list]](index.md#documentation-for-api-endpoints) [[Back to README]](index.md)
 
 
